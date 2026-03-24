@@ -466,7 +466,9 @@ function generatePortfolio(data) {
     #home.active { height: auto; overflow: visible; }
     .hero { flex: none; padding: 100px 20px 48px; flex-direction: column; align-items: flex-start; gap: 0; }
     .hero-left { gap: 16px; padding-right: 0; }
-    .hero-right { display: none; }
+    .hero-right { order: -1; position: relative; width: 100%; height: 260px; display: flex !important; align-items: center; justify-content: center; pointer-events: all; }
+    .sphere-wrap { width: 260px !important; height: 260px !important; }
+    .sphere-wrap canvas { width: 260px !important; height: 260px !important; }
     .hero-headline { font-size: clamp(18px, 5vw, 28px); }
     .projects { padding: 0 20px 60px; }
     .pcard:hover { opacity: 1; }
@@ -733,7 +735,7 @@ ${allProjectPages}
 (function() {
   var wrap = document.getElementById('sphereWrap');
   if (!wrap) return;
-  var W = 1000, H = 1000;
+  var W = wrap.offsetWidth || 1000, H = wrap.offsetHeight || 1000;
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(60, W / H, 0.1, 1000);
   camera.position.z = 5.5;
@@ -778,39 +780,61 @@ ${allProjectPages}
     return pts.slice(0, count);
   }
 
-  var pts, R = 1.15;
-  if (shape === 'sphere') {
-    pts = [];
-    for (var i = 0; i < DOT_COUNT; i++) { var phi = Math.acos(1 - 2*(i+0.5)/DOT_COUNT); var theta = Math.PI*(1+Math.sqrt(5))*i; pts.push(new THREE.Vector3(R*Math.sin(phi)*Math.cos(theta), R*Math.sin(phi)*Math.sin(theta), R*Math.cos(phi))); }
-  } else if (shape === 'cube') {
-    var h = R/Math.sqrt(3); var cv = [-h,-h,-h,h,-h,-h,h,h,-h,-h,h,-h,-h,-h,h,h,-h,h,h,h,h,-h,h,h]; var ci = [0,1,2,0,2,3,4,6,5,4,7,6,0,5,1,0,4,5,2,6,3,3,6,7,0,7,4,0,3,7,1,5,6,1,6,2]; pts = distributeEvenlyOnFaces(getPolyhedronFaces(cv, ci), DOT_COUNT);
-  } else if (shape === 'octahedron') {
-    var r = R; var ov = [r,0,0,-r,0,0,0,r,0,0,-r,0,0,0,r,0,0,-r]; var oi = [0,2,4,0,4,3,0,3,5,0,5,2,1,4,2,1,3,4,1,5,3,1,2,5]; pts = distributeEvenlyOnFaces(getPolyhedronFaces(ov, oi), DOT_COUNT);
-  } else if (shape === 'tetrahedron') {
-    var t = R/Math.sqrt(3); var tv = [t,t,t,t,-t,-t,-t,t,-t,-t,-t,t]; var ti = [0,1,2,0,2,3,0,3,1,1,3,2]; pts = distributeEvenlyOnFaces(getPolyhedronFaces(tv, ti), DOT_COUNT);
-  } else if (shape === 'torus') {
-    pts = geoToPts(new THREE.TorusGeometry(0.76, 0.38, 32, 50), DOT_COUNT);
-  } else if (shape === 'icosahedron') {
-    pts = geoToPts(new THREE.IcosahedronGeometry(R * 0.92, 3), DOT_COUNT);
-  } else if (shape === 'dodecahedron') {
-    pts = geoToPts(new THREE.DodecahedronGeometry(R * 0.88, 2), DOT_COUNT);
-  } else {
-    // mobius strip
-    pts = [];
-    var uN = 80, vN = 20, RM = 0.86, w = 0.44;
-    for (var ui = 0; ui < uN; ui++) {
-      for (var vi = 0; vi < vN; vi++) {
-        var u = (ui / uN) * Math.PI * 2, v = -w + (vi / (vN - 1)) * 2 * w;
-        pts.push(new THREE.Vector3(
-          (RM + v * Math.cos(u / 2)) * Math.cos(u),
-          (RM + v * Math.cos(u / 2)) * Math.sin(u),
-          v * Math.sin(u / 2)
-        ));
+  var R = 1.15;
+  function buildShapePts(s) {
+    var pts;
+    if (s === 'sphere') {
+      pts = [];
+      for (var i = 0; i < DOT_COUNT; i++) { var phi = Math.acos(1 - 2*(i+0.5)/DOT_COUNT); var theta = Math.PI*(1+Math.sqrt(5))*i; pts.push(new THREE.Vector3(R*Math.sin(phi)*Math.cos(theta), R*Math.sin(phi)*Math.sin(theta), R*Math.cos(phi))); }
+    } else if (s === 'cube') {
+      var h = R/Math.sqrt(3); var cv = [-h,-h,-h,h,-h,-h,h,h,-h,-h,h,-h,-h,-h,h,h,-h,h,h,h,h,-h,h,h]; var ci = [0,1,2,0,2,3,4,6,5,4,7,6,0,5,1,0,4,5,2,6,3,3,6,7,0,7,4,0,3,7,1,5,6,1,6,2]; pts = distributeEvenlyOnFaces(getPolyhedronFaces(cv, ci), DOT_COUNT);
+    } else if (s === 'octahedron') {
+      var r = R; var ov = [r,0,0,-r,0,0,0,r,0,0,-r,0,0,0,r,0,0,-r]; var oi = [0,2,4,0,4,3,0,3,5,0,5,2,1,4,2,1,3,4,1,5,3,1,2,5]; pts = distributeEvenlyOnFaces(getPolyhedronFaces(ov, oi), DOT_COUNT);
+    } else if (s === 'tetrahedron') {
+      var t = R/Math.sqrt(3); var tv = [t,t,t,t,-t,-t,-t,t,-t,-t,-t,t]; var ti = [0,1,2,0,2,3,0,3,1,1,3,2]; pts = distributeEvenlyOnFaces(getPolyhedronFaces(tv, ti), DOT_COUNT);
+    } else if (s === 'torus') {
+      pts = geoToPts(new THREE.TorusGeometry(0.76, 0.38, 32, 50), DOT_COUNT);
+    } else if (s === 'icosahedron') {
+      pts = geoToPts(new THREE.IcosahedronGeometry(R * 0.92, 3), DOT_COUNT);
+    } else if (s === 'dodecahedron') {
+      pts = geoToPts(new THREE.DodecahedronGeometry(R * 0.88, 2), DOT_COUNT);
+    } else {
+      pts = [];
+      var uN = 80, vN = 20, RM = 0.86, w = 0.44;
+      for (var ui = 0; ui < uN; ui++) {
+        for (var vi = 0; vi < vN; vi++) {
+          var u = (ui / uN) * Math.PI * 2, v = -w + (vi / (vN - 1)) * 2 * w;
+          pts.push(new THREE.Vector3((RM + v * Math.cos(u / 2)) * Math.cos(u), (RM + v * Math.cos(u / 2)) * Math.sin(u), v * Math.sin(u / 2)));
+        }
       }
     }
+    return pts;
   }
 
+  var pts = buildShapePts(shape);
   for (var i = 0; i < DOT_COUNT; i++) { positions[i*3]=pts[i].x; positions[i*3+1]=pts[i].y; positions[i*3+2]=pts[i].z; originalPositions[i*3]=pts[i].x; originalPositions[i*3+1]=pts[i].y; originalPositions[i*3+2]=pts[i].z; }
+
+  // Morph system
+  var morphStart = new Float32Array(DOT_COUNT * 3);
+  var morphTarget = new Float32Array(DOT_COUNT * 3);
+  var morphT = 1.0;
+  var shapeIdx = SHAPES.indexOf(shape);
+
+  function startMorph(newShape) {
+    morphStart.set(originalPositions);
+    var npts = buildShapePts(newShape);
+    for (var i = 0; i < DOT_COUNT; i++) { morphTarget[i*3]=npts[i].x; morphTarget[i*3+1]=npts[i].y; morphTarget[i*3+2]=npts[i].z; }
+    morphT = 0;
+    shape = newShape;
+  }
+
+  // Tap to cycle shapes on mobile
+  var tapStartX, tapStartY;
+  wrap.addEventListener('touchstart', function(e) { tapStartX = e.touches[0].clientX; tapStartY = e.touches[0].clientY; }, { passive: true });
+  wrap.addEventListener('touchend', function(e) {
+    var dx = e.changedTouches[0].clientX - tapStartX, dy = e.changedTouches[0].clientY - tapStartY;
+    if (Math.sqrt(dx*dx+dy*dy) < 10) { shapeIdx = (shapeIdx + 1) % SHAPES.length; startMorph(SHAPES[shapeIdx]); }
+  }, { passive: true });
 
   var geometry = new THREE.BufferGeometry();
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
@@ -843,6 +867,12 @@ ${allProjectPages}
     autoRotY += 0.003; points.rotation.y = autoRotY;
     points.rotation.x += (mouseNDC.y*0.25 - points.rotation.x)*0.05;
     mouse3D.lerp(mouse3DTarget, 0.12); mouseNDC.x += (mouseNDCTarget.x-mouseNDC.x)*0.08; mouseNDC.y += (mouseNDCTarget.y-mouseNDC.y)*0.08;
+    if (morphT < 1) {
+      morphT = Math.min(1, morphT + 0.018);
+      var ease = morphT < 0.5 ? 2*morphT*morphT : -1+(4-2*morphT)*morphT;
+      for (var k = 0; k < DOT_COUNT * 3; k++) originalPositions[k] = morphStart[k] + (morphTarget[k] - morphStart[k]) * ease;
+      if (morphT >= 1) morphStart.set(originalPositions);
+    }
     points.updateMatrixWorld();
     var pos = geometry.attributes.position.array;
     var invMatrix = new THREE.Matrix4().copy(points.matrixWorld).invert();
