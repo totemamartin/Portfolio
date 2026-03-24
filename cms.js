@@ -393,11 +393,11 @@ function generatePortfolio(data) {
   .g5 { background: radial-gradient(ellipse at 50% 50%, #150808 0%, #040404 70%); }
   .g6 { background: radial-gradient(ellipse at 60% 40%, #0a1a2e 0%, #050a10 55%), linear-gradient(160deg,#061018,#020608); }
 
-  .site-footer { padding: 40px 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-  .footer-copy { font-size: 12px; color: var(--muted); font-family: Inter; }
-  .footer-links { display: flex; gap: 24px; }
-  .footer-links a { font-size: 12px; color: var(--muted); text-decoration: none; cursor: none; transition: color 0.2s; font-family: Inter; }
-  .footer-links a:hover { color: var(--text); }
+  .site-footer { display: none; }
+  .hero-footer { position: absolute; bottom: 32px; right: 32px; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; z-index: 10; }
+  .hero-footer-copy { font-size: 11px; color: var(--muted); font-family: Inter; }
+  .hero-footer a { font-size: 11px; color: var(--muted); text-decoration: none; cursor: none; transition: color 0.2s; font-family: Inter; }
+  .hero-footer a:hover { color: var(--text); }
 
   .proj-page { padding: 120px 32px 80px; max-width: 1100px; margin: 0 auto; }
   .back-btn {
@@ -477,7 +477,7 @@ function generatePortfolio(data) {
     .pcard-right .pcard-img { width: 100%; height: 100%; }
     .pcard-title { font-size: 14px; }
     .pw-box { width: calc(100vw - 32px); padding: 40px 28px; }
-    .site-footer { flex-direction: column; align-items: flex-start; gap: 16px; padding: 32px 20px; }
+    .hero-footer { bottom: 20px; right: 20px; }
     .proj-page { padding: 90px 20px 60px; }
     .proj-title { font-size: clamp(36px, 10vw, 56px); }
     .proj-meta { flex-wrap: wrap; }
@@ -539,15 +539,12 @@ ${renderHomeProjects()}
     <div class="hero-right">
       <div class="sphere-wrap" id="sphereWrap"></div>
     </div>
-  </section>
-
-  <footer class="site-footer">
-    <span class="footer-copy">${esc(footer.copyright)}</span>
-    <div class="footer-links">
+    <div class="hero-footer">
+      <span class="hero-footer-copy">${esc(footer.copyright)}</span>
       <a href="mailto:${esc(footer.email)}">${esc(footer.email)}</a>
-      <a href="tel:${esc(footer.phone)}">${esc(footer.phone)}</a>
+      ${footer.phone ? `<a href="tel:${esc(footer.phone)}">${esc(footer.phone)}</a>` : ''}
     </div>
-  </footer>
+  </section>
 </div>
 
 <!-- PROJECT PAGES -->
