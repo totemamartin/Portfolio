@@ -197,7 +197,8 @@
           "id": 3,
           "label": "Next Project",
           "title": "Treatwell PRO"
-        }
+        },
+        "heroImage": "images/img-1774359067863.png"
       },
       "image": "images/img-1773779658028.png"
     },
@@ -251,33 +252,45 @@
             "title": "One company, two platforms, zero consistency",
             "text": "Treatwell runs a B2B product for salon professionals and a B2C platform for customers. Both had grown independently, developing overlapping but misaligned component libraries. The cost was real: duplicated work, visual inconsistencies, and a codebase where changing one thing broke another. The system needed to be rebuilt from the ground up, not patched.",
             "gradient": "g2",
-            "reverse": false
+            "reverse": false,
+            "image": "images/img-1774356542501.png",
+            "fullWidth": true
           },
           {
-            "label": "The Work",
+            "label": "Design system structure",
             "title": "Architecture first, components second",
-            "text": "We proposed a three-tier structure: a shared foundation layer (Aphrodite) containing tokens, typography, and colour; a B2B UI library (Armonia) for the salon management product; and a B2C platform library (Eros) for the consumer app. Every layer was mirrored in Figma and Storybook. Weekly co-creation sessions shaped the roadmap, while bi-weekly shadowing in real salons validated components in the wild.",
+            "text": "<p>We proposed a three-tier structure: a shared foundation layer (Aphrodite) containing tokens, typography, and colour; a B2B UI library (Armonia) for the salon management product; and a B2C platform library (Eros) for the consumer app. Every layer was mirrored in Figma and Storybook. Weekly co-creation sessions shaped the roadmap, while bi-weekly shadowing in real salons validated components in the wild.</p>",
             "gradient": "g3",
             "reverse": true,
-            "image": "images/img-1773781165391.png"
+            "image": "images/img-1774356933390.png"
+          },
+          {
+            "label": "Testing",
+            "title": "Testing directly with real users",
+            "text": "<p data-start=\"152\" data-end=\"248\">We tested our components directly with users through shadowing and usability testing sessions.</p>\n<p data-start=\"255\" data-end=\"355\">Shadowing sessions were conducted in the field with our users, typically every two to three weeks.</p>\n<p data-start=\"362\" data-end=\"493\">We combined these qualitative insights with quantitative data from Google Analytics to inform the next iterations and improvements.</p>",
+            "gradient": "g1",
+            "image": "images/img-1774356959032.png",
+            "reverse": false,
+            "fullWidth": false
           }
         ],
         "whatIDid": [
           "Audited the existing Figma libraries and Storybook to map duplications and identify where the two platforms diverged most critically",
           "Proposed and defined the three-tier architecture with the core team, getting buy-in from both design and engineering before building anything",
           "Led weekly roadmap sessions, balancing component creation with maintenance governance and contribution guidelines",
-          "Designed and ran bi-weekly shadowing sessions with salon professionals — sitting with users in their working environment to observe how components performed under real conditions",
+          "<p>Designed and ran bi-weekly shadowing sessions with salon professionals, sitting with users in their working environment to observe how components performed under real conditions</p>",
           "Wrote the contribution and issue-reporting process that allowed anyone in the company to participate without degrading quality"
         ],
         "whatILearned": [
-          "A design system only works if engineers trust it as much as designers do. Mirroring Figma and Storybook from the start — rather than building one and retrofitting the other — was the single most important architectural decision we made. It removed the excuse not to use it.",
+          "<p>A design system only works if engineers trust it as much as designers do. Mirroring Figma and Storybook from the start, rather than building one and retrofitting the other, was the single most important architectural decision we made. It removed the excuse not to use it.</p>",
           "I also learned that in-context testing is irreplaceable. Reviewing components in Figma told us what they looked like. Watching a salon professional use them on a busy Saturday morning told us whether they actually worked. There is no substitute for that gap."
         ],
         "nextProject": {
           "id": 4,
           "label": "Next Project",
           "title": "Flowe App"
-        }
+        },
+        "heroImage": "images/img-1774356820560.png"
       },
       "image": "images/img-1773333027969.png"
     },
@@ -418,20 +431,31 @@
         ],
         "sections": [
           {
-            "label": "The Challenge",
+            "label": "The challenge",
             "title": "Designing a service at scale, with five organisations in the room",
             "text": "Sky was launching a new broadband service — and needed to design not just screens, but every touchpoint a customer would encounter, from the first ad to the technician visit to the cancellation call. More than 100 distinct capabilities. Five organisations at the table. Fourteen months. The risk wasn't that we'd design something bad. It was that the pieces wouldn't connect.",
             "gradient": "g4",
-            "reverse": false
+            "reverse": false,
+            "image": "images/img-1774357725851.png",
+            "fullWidth": true
           },
           {
-            "label": "The Work",
-            "title": "Making the invisible visible — and reviewable",
-            "text": "Sketchin's role was to map every phase of the experience and make it useful as a guide for product owners across all workstreams. That meant co-creating with subject matter experts, translating their domain knowledge into designed flows, and then reviewing every mockup for consistency and usability — catching untreated edge cases before they became product bugs.",
+            "label": "The work",
+            "title": "Designing the experience framework",
+            "text": "<p data-start=\"184\" data-end=\"308\">Sketchin's role was to map every phase of the experience and make it actionable for product owners across all workstreams.</p><p>\n</p><p data-start=\"315\" data-end=\"489\">This involved close collaboration with subject matter experts, translating domain knowledge into clear user flows, and shaping a shared foundation to guide product decisions.</p>",
             "gradient": "g5",
             "reverse": true,
             "image": "images/img-1773781853698.png",
             "fullWidth": true
+          },
+          {
+            "label": "the work",
+            "title": "Managing Complexity and preventing rework",
+            "text": "<p data-start=\"549\" data-end=\"692\">The fragmented and asynchronous nature of the project introduced significant complexity, often resulting in rework across the design process.</p><p data-start=\"137\" data-end=\"305\">\n</p><p data-start=\"699\" data-end=\"869\">To address this, we systematically reviewed mockups to ensure consistency and usability, identifying gaps and edge cases early, before they could turn into product issues.</p>",
+            "gradient": "g1",
+            "image": "images/img-1774357808730.png",
+            "reverse": false,
+            "fullWidth": false
           }
         ],
         "whatIDid": [
