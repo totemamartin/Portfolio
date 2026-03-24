@@ -263,7 +263,7 @@
     .dock-link { padding: 8px 14px; font-size: 11px; }
     #home.active { height: auto; overflow: visible; }
     .hero { flex: none; padding: 100px 20px 72px; flex-direction: column; align-items: flex-start; gap: 0; }
-    .hero-left { gap: 16px; padding-right: 0; }
+    .hero-left { gap: 72px; padding-right: 0; }
     .hero-right { order: -1; position: relative; width: 100%; height: 260px; display: flex !important; align-items: center; justify-content: center; pointer-events: all; }
     .sphere-wrap { width: 260px !important; height: 260px !important; }
     .sphere-wrap canvas { width: 260px !important; height: 260px !important; }
