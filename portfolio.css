@@ -262,7 +262,7 @@
     .dock { bottom: 20px; }
     .dock-link { padding: 8px 14px; font-size: 11px; }
     #home.active { height: auto; overflow: visible; }
-    .hero { flex: none; padding: 100px 20px 48px; flex-direction: column; align-items: flex-start; gap: 0; }
+    .hero { flex: none; padding: 100px 20px 72px; flex-direction: column; align-items: flex-start; gap: 0; }
     .hero-left { gap: 16px; padding-right: 0; }
     .hero-right { order: -1; position: relative; width: 100%; height: 260px; display: flex !important; align-items: center; justify-content: center; pointer-events: all; }
     .sphere-wrap { width: 260px !important; height: 260px !important; }
@@ -284,7 +284,7 @@
     .proj-impact { grid-template-columns: 1fr; border-radius: 16px; margin-bottom: 40px; }
     .impact-item { border-right: none; border-bottom: 1px solid var(--border); }
     .impact-item:last-child { border-bottom: none; }
-    .proj-section { grid-template-columns: 1fr; gap: 28px; padding: 40px 0; }
+    .proj-section { grid-template-columns: 1fr; gap: 28px; padding: 0; }
     .proj-section.reverse { direction: ltr; }
     .proj-did { grid-template-columns: 1fr; gap: 20px; padding: 40px 0; }
     .proj-learned { grid-template-columns: 1fr; gap: 20px; padding: 40px 0; margin-bottom: 40px; }
