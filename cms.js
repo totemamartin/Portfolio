@@ -470,7 +470,7 @@ function generatePortfolio(data) {
     .hero-right { order: -1; position: relative; width: 100%; height: 260px; display: flex !important; align-items: center; justify-content: center; pointer-events: all; }
     .sphere-wrap { width: 260px !important; height: 260px !important; }
     .sphere-wrap canvas { width: 260px !important; height: 260px !important; }
-    .hero-headline { font-size: clamp(18px, 5vw, 28px); }
+    .hero-headline { font-size: clamp(18px, 5vw, 28px); width: 100%; }
     .projects { padding: 0; }
     .pcard:hover { opacity: 1; }
     .pcard-right { display: block; flex: 0 0 120px; height: 80px; border-radius: 12px; overflow: hidden; }
