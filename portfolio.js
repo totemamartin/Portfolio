@@ -39,15 +39,15 @@
     if (typeof window._resumeSphere === 'function') window._resumeSphere(id === 'home');
   }
 
-  function openLightbox(src) {
+  window.openLightbox = function(src) {
     var lb = document.getElementById('imgLightbox');
     lb.querySelector('img').src = src;
     lb.classList.add('open');
-  }
-  function closeLightbox() {
+  };
+  window.closeLightbox = function() {
     document.getElementById('imgLightbox').classList.remove('open');
-  }
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+  };
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') window.closeLightbox(); });
 
   function openModal(n) {
     pendingProject = n;
