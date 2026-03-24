@@ -7,7 +7,7 @@ const path = require('path');
 
 const PORT = 3001;
 const DATA_FILE = path.join(__dirname, 'data.json');
-const OUTPUT_FILE = path.join(__dirname, 'portfolio.html');
+const OUTPUT_FILE = path.join(__dirname, 'index.html');
 const IMAGES_DIR = path.join(__dirname, 'images');
 
 // Ensure images directory exists
