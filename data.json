@@ -190,8 +190,8 @@
           "Ran the first cross-functional UX Review, establishing it as a recurring space where design decisions were explained and challenged openly"
         ],
         "whatILearned": [
-          "The hardest part of building a design team isn't the design — it's the politics. Getting engineers and strategists to trust a new process requires showing up consistently before asking for anything in return. The ceremonies only worked because I ran them rigorously even when attendance was low.",
-          "I also learned that documentation is a form of design. The Notion system only became useful when I treated it like a product: with real information architecture, clear ownership, and a feedback loop. A repository no one uses is just organised clutter."
+          "<p data-start=\"172\" data-end=\"250\">The hardest part of building a design team isn’t design, it’s the politics.</p><p data-start=\"257\" data-end=\"404\">Getting engineers and strategists to trust a new process requires consistency: showing up, again and again, before asking for anything in return.</p><p>\n\n</p><p data-start=\"411\" data-end=\"500\">The ceremonies only worked because I ran them rigorously, even when attendance was low.</p>",
+          "<p data-start=\"507\" data-end=\"728\">I also learned that documentation is a form of design. The Notion system only became truly useful when I treated it like a product, with clear information architecture, defined ownership, and continuous feedback loops.</p><p>\n</p><p data-start=\"735\" data-end=\"786\">A repository no one uses is just organized clutter</p>"
         ],
         "nextProject": {
           "id": 3,
