@@ -135,7 +135,7 @@
   #home.active { visibility: visible; position: static; pointer-events: auto; width: auto; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
 
   .hero {
-    flex: 1; min-height: 0; padding: 90px 32px 60px;
+    flex: 1; min-height: 0; padding: 90px 80px 60px;
     display: flex; align-items: stretch; gap: 0; position: relative;
   }
   .hero-left { flex: 1; display: flex; flex-direction: column; padding-right: 48px; }
@@ -157,7 +157,7 @@
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 
-  .projects { padding-top: 100px; }
+  .projects { padding-bottom: 100px; }
   .case-studies-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
   .projects-list { display: flex; flex-direction: column; }
   .pcard { display: flex; align-items: center; padding: 11px 0; cursor: none; transition: opacity 0.25s; position: relative; animation: fadeUp 0.8s ease both; }
