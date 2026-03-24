@@ -174,9 +174,10 @@ function generatePortfolio(data) {
 </div>`;
   }
 
-  const navLinks = nav.links.map(l =>
-    `<a href="${esc(l.url)}">${esc(l.label)}</a>`
-  ).join('\n    ');
+  const navLinks = nav.links.map(l => {
+    const dl = l.url && l.url.endsWith('.pdf') ? ' download' : '';
+    return `<a href="${esc(l.url)}"${dl}>${esc(l.label)}</a>`;
+  }).join('\n    ');
 
   const allProjectPages = projects.map(renderProjectPage).join('\n');
 
