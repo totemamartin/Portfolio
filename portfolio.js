@@ -5,7 +5,7 @@
 
   // Per-project hover data (gradient fallback + optional image)
   var projectHoverData = { 1: { gradient: 'g6', image: null }, 2: { gradient: 'g1', image: 'images/img-1773779658028.png' }, 3: { gradient: 'g2', image: 'images/img-1773333027969.png' }, 4: { gradient: 'g3', image: 'images/img-1773333132525.png' }, 5: { gradient: 'g4', image: 'images/img-1773333109932.png' }, 6: { gradient: 'g5', image: null } };
-  var projectNextData = { 1: { id: 2, title: 'Design Team — Casavo' }, 2: { id: 3, title: 'Treatwell PRO' }, 3: { id: 4, title: 'Flowe App' }, 4: { id: 5, title: 'Sky Wi-Fi' }, 5: { id: 6, title: 'My Ferrari Mobile' }, 6: { id: 1, title: 'Elevate Documents — Deel' } };
+  var projectNextData = { 1: { id: 2, title: 'Design Team — Casavo' }, 2: { id: 3, title: 'Treatwell PRO' }, 3: { id: 4, title: 'Flowe App' }, 4: { id: 5, title: 'Sky Wi-Fi' } };
 
   function showPage(id) {
     document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });

@@ -184,10 +184,11 @@ function generatePortfolio(data) {
     return `${p.id}: { gradient: '${p.gradient}', image: ${img} }`;
   }).join(', ');
 
-  // Build per-project next-project data for JS
+  // Build per-project next-project data for JS (skip hidden projects)
+  const homeSet = new Set(homeProjectOrder);
   const nextDataJS = projects.map(p => {
     const np = p.detail.nextProject;
-    if (!np) return null;
+    if (!np || !homeSet.has(np.id)) return null;
     return `${p.id}: { id: ${np.id}, title: '${np.title.replace(/'/g, "\\'")}' }`;
   }).filter(Boolean).join(', ');
 
