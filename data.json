@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "title": "Matteo Martin — Product Designer"
+  },
+  "hero": {
+    "tagline": "Digital Product Designer at Deel. 10+ years of craft. \nDriven by new tech, inspired by music, \nand dedicated to making the complex feel simple",
+    "lastUpdated": "Last updated",
+    "dateRange": "2022 — 2026"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "LI",
+        "url": "https://www.linkedin.com/in/matteo-martin-266a7293/"
+      },
+      {
+        "label": "CV",
+        "url": "#"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Matteo Martin © 2026",
+    "email": "martinmatteo@outlook.com",
+    "phone": ""
+  },
+  "password": "portfolio2026",
+  "homeProjectOrder": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "client": "Deel",
+      "title": "Elevate Documents Experience",
+      "tag": "",
+      "year": "2025",
+      "gradient": "g6",
+      "detail": {
+        "headerTag": "Deel · 2025",
+        "title": "Elevate Documents Experience",
+        "meta": [
+          {
+            "label": "Company",
+            "value": "Deel"
+          },
+          {
+            "label": "My Role",
+            "value": "Product Designer"
+          },
+          {
+            "label": "Topic",
+            "value": "Product Design"
+          },
+          {
+            "label": "Year",
+            "value": "2025"
+          }
+        ],
+        "heroGradient": "g6",
+        "outcome": "Deel's documents experience was redesigned from the ground up — transforming a fragmented, friction-heavy flow into a fast, intuitive system that lets HR teams and contractors create, sign, and manage documents without leaving the platform. The result reduced time-to-completion and positioned documents as a first-class product within Deel's ecosystem.",
+        "impact": [
+          {
+            "num": "↓",
+            "desc": "Significant reduction in document completion time across key user journeys"
+          },
+          {
+            "num": "1",
+            "desc": "Unified document creation, signing, and management flow replacing multiple disconnected entry points"
+          },
+          {
+            "num": "Global",
+            "desc": "Designed to serve Deel's multinational user base across dozens of contract types and legal contexts"
+          }
+        ],
+        "sections": [
+          {
+            "label": "The Challenge",
+            "title": "Documents were an afterthought in a platform built on them",
+            "text": "At Deel, documents are foundational — contracts, NDAs, amendments, and compliance files underpin every hiring and payment flow. But the experience had grown organically: multiple entry points, inconsistent states, unclear ownership of actions. Users — both HR teams and contractors — were confused about where to go, what was pending, and what needed their attention. Documents needed to become a product, not a feature.",
+            "gradient": "g6",
+            "reverse": false
+          },
+          {
+            "label": "The Work",
+            "title": "Clarity through structure, speed through simplicity",
+            "text": "The redesign focused on three things: clear status at a glance, a single coherent flow for every document action, and a creation experience that felt fast and trustworthy. We mapped every document state — draft, pending, signed, expired — and gave each a clear visual language. \n\nTemplate management, bulk actions, and signing flows were consolidated into a system that worked the same way regardless of document type or legal context.",
+            "gradient": "g1",
+            "reverse": true
+          }
+        ],
+        "whatIDid": [
+          "Led end-to-end design for the documents hub — from the initial audit of the existing experience through to final handoff specifications",
+          "Defined the information architecture for document states, making pending actions and status immediately legible for both senders and recipients",
+          "Designed the unified document creation flow, reducing a multi-step process with ambiguous entry points into a single, guided experience",
+          "Collaborated closely with legal and compliance stakeholders to ensure the design accommodated the full range of contract types and international requirements Deel operates across",
+          "Built and maintained the component library extensions required for the documents system, ensuring consistency with Deel's broader design system",
+          "Ran usability testing sessions with HR managers and contractors to validate the new flows before development, iterating on friction points surfaced in testing"
+        ],
+        "whatILearned": [
+          "Designing for compliance-heavy contexts forces a kind of precision that most product design doesn't require. Every label, every state, every action had legal implications — which meant the usual instinct to simplify had to be balanced against the need for accuracy. I came away with a much sharper understanding of how to make something feel simple without hiding complexity that users actually need to see.",
+          "Working at Deel's scale also taught me how important system thinking is at the point of delivery, not just at the point of design. The documents feature touched payment flows, notification systems, and third-party integrations. Designing it well meant understanding those dependencies deeply — not just the screens I was responsible for, but everything adjacent that could break if we got something wrong."
+        ],
+        "nextProject": {
+          "id": 2,
+          "label": "First Project",
+          "title": "Design Team — Casavo"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "client": "Casavo",
+      "title": "Design Team",
+      "tag": "",
+      "year": "2022",
+      "gradient": "g1",
+      "detail": {
+        "headerTag": "Casavo · 2022",
+        "title": "Design Team",
+        "meta": [
+          {
+            "label": "Company",
+            "value": "Casavo"
+          },
+          {
+            "label": "My Role",
+            "value": "Product Design Lead"
+          },
+          {
+            "label": "Duration",
+            "value": "6 months"
+          },
+          {
+            "label": "Year",
+            "value": "2022"
+          }
+        ],
+        "heroGradient": "g1",
+        "outcome": "Casavo went from having no formal design practice to a fully operational team with clear roles, shared rituals, and a unified knowledge base — all within six months. Design decisions became visible, traceable, and trusted across the organisation.",
+        "impact": [
+          {
+            "num": "2×",
+            "desc": "Increase in design output velocity after standardising file and delivery structure"
+          },
+          {
+            "num": "3",
+            "desc": "Linked Notion databases built to connect research, users, and product insights"
+          },
+          {
+            "num": "3",
+            "desc": "Weekly design ceremonies introduced with concrete goals and cross-team participation"
+          }
+        ],
+        "sections": [
+          {
+            "label": "The Challenge",
+            "title": "Building from zero, with no playbook",
+            "text": "<p data-start=\"153\" data-end=\"364\">When I joined Casavo, design barely existed. There were no defined roles, no shared rituals, and no agreed-upon deliverables. Engineering and Strategy had little visibility into what design was doing — or why.</p><p>\n</p><p data-start=\"371\" data-end=\"450\">The first challenge wasn’t designing screens. It was designing the team itself</p>",
+            "gradient": "g1",
+            "reverse": false,
+            "image": "images/img-1774289065929.jpg"
+          },
+          {
+            "label": "The Work",
+            "title": "Ceremonies, artifacts, and a single source of truth",
+            "text": "<p data-start=\"142\" data-end=\"279\">We began by setting up a structured approach to our work, built around three core pillars: Responsibilities, Ceremonies, and Artifacts.</p><p data-start=\"286\" data-end=\"419\">First, we clarified the responsibilities and boundaries of each role, creating a shared understanding of ownership across the team.</p><p data-start=\"286\" data-end=\"419\"><br></p><p data-start=\"426\" data-end=\"588\">We then defined clear goals for our ceremonies, turning them into meaningful moments for sharing progress, aligning, and continuously improving the way we work.</p><p data-start=\"426\" data-end=\"588\"><br></p><p>\n\n\n</p><p data-start=\"595\" data-end=\"875\">Finally, we worked closely with Strategy and Engineering to better understand their needs from our design files. This led us to design a new structure and improve the overall organization of our deliverables, making them more accessible and effective for cross-team collaboration</p>",
+            "gradient": "g2",
+            "reverse": true,
+            "image": "images/img-1774288667217.png"
+          },
+          {
+            "label": "Artifact",
+            "title": "Notion as north star",
+            "text": "<p data-start=\"182\" data-end=\"316\">We chose Notion as a single source of truth to document all our practices and decisions, and to use it as a repository for our data.</p><p data-start=\"323\" data-end=\"407\">Specifically, for discovery activities, we defined three interconnected databases:</p><p data-start=\"414\" data-end=\"503\"><ul><li><strong data-start=\"414\" data-end=\"436\">Research Projects:</strong> <i>which map each discovery activity, including the owner and date.</i></li><li><strong data-start=\"510\" data-end=\"520\">Users:</strong> <i>which contains all our users, along with their contact details and brief feedback.</i></li><li><strong data-start=\"612\" data-end=\"625\">Insights:</strong> <i>which includes a synthesis of the feedback gathered from research. We use it to align with Strategy and plan the next design activities</i></li></ul></p><p>\n\n\n\n</p>",
+            "gradient": "g1",
+            "image": "images/img-1774288381661.png",
+            "reverse": false,
+            "fullWidth": true
+          }
+        ],
+        "whatIDid": [
+          "Defined role boundaries for Product Designer and Content Designer, removing ambiguity that had caused duplicated effort and missed handoffs",
+          "Designed and facilitated four recurring ceremonies, setting explicit success criteria for each so they never became empty rituals",
+          "Negotiated a unified file and delivery structure with engineering and strategy leads, reducing rework at handoff by standardising what \"done\" looks like",
+          "<p>Built three linked Notion databases: <b>Research</b> <b>Projects </b>and&nbsp;<b>Users</b>, Insights making the team's knowledge navigable and useful for planning</p>",
+          "Ran the first cross-functional UX Review, establishing it as a recurring space where design decisions were explained and challenged openly"
+        ],
+        "whatILearned": [
+          "The hardest part of building a design team isn't the design — it's the politics. Getting engineers and strategists to trust a new process requires showing up consistently before asking for anything in return. The ceremonies only worked because I ran them rigorously even when attendance was low.",
+          "I also learned that documentation is a form of design. The Notion system only became useful when I treated it like a product: with real information architecture, clear ownership, and a feedback loop. A repository no one uses is just organised clutter."
+        ],
+        "nextProject": {
+          "id": 3,
+          "label": "Next Project",
+          "title": "Treatwell PRO"
+        }
+      },
+      "image": "images/img-1773779658028.png"
+    },
+    {
+      "id": 3,
+      "client": "Treatwell",
+      "title": "Treatwell PRO",
+      "tag": "",
+      "year": "2021",
+      "gradient": "g2",
+      "detail": {
+        "headerTag": "Treatwell · 2021",
+        "title": "Treatwell PRO",
+        "meta": [
+          {
+            "label": "Company",
+            "value": "Treatwell"
+          },
+          {
+            "label": "My Role",
+            "value": "Product Designer"
+          },
+          {
+            "label": "Duration",
+            "value": "> 6 months"
+          },
+          {
+            "label": "Year",
+            "value": "2021"
+          }
+        ],
+        "heroGradient": "g2",
+        "outcome": "Treatwell shipped a stable, three-tier design system — covering foundations, B2B, and B2C — mirrored in both Figma and Storybook. Design velocity increased, cross-team inconsistencies dropped, and the system became something every designer and engineer could contribute to without breaking.",
+        "impact": [
+          {
+            "num": "3",
+            "desc": "Library tiers built: Aphrodite (foundations), Armonia (B2B), Eros (B2C)"
+          },
+          {
+            "num": "Bi-weekly",
+            "desc": "In-salon shadowing sessions to validate components with real professionals"
+          },
+          {
+            "num": "1.0",
+            "desc": "Stable release shipped with documented contribution and maintenance processes"
+          }
+        ],
+        "sections": [
+          {
+            "label": "The Challenge",
+            "title": "One company, two platforms, zero consistency",
+            "text": "Treatwell runs a B2B product for salon professionals and a B2C platform for customers. Both had grown independently, developing overlapping but misaligned component libraries. The cost was real: duplicated work, visual inconsistencies, and a codebase where changing one thing broke another. The system needed to be rebuilt from the ground up, not patched.",
+            "gradient": "g2",
+            "reverse": false
+          },
+          {
+            "label": "The Work",
+            "title": "Architecture first, components second",
+            "text": "We proposed a three-tier structure: a shared foundation layer (Aphrodite) containing tokens, typography, and colour; a B2B UI library (Armonia) for the salon management product; and a B2C platform library (Eros) for the consumer app. Every layer was mirrored in Figma and Storybook. Weekly co-creation sessions shaped the roadmap, while bi-weekly shadowing in real salons validated components in the wild.",
+            "gradient": "g3",
+            "reverse": true,
+            "image": "images/img-1773781165391.png"
+          }
+        ],
+        "whatIDid": [
+          "Audited the existing Figma libraries and Storybook to map duplications and identify where the two platforms diverged most critically",
+          "Proposed and defined the three-tier architecture with the core team, getting buy-in from both design and engineering before building anything",
+          "Led weekly roadmap sessions, balancing component creation with maintenance governance and contribution guidelines",
+          "Designed and ran bi-weekly shadowing sessions with salon professionals — sitting with users in their working environment to observe how components performed under real conditions",
+          "Wrote the contribution and issue-reporting process that allowed anyone in the company to participate without degrading quality"
+        ],
+        "whatILearned": [
+          "A design system only works if engineers trust it as much as designers do. Mirroring Figma and Storybook from the start — rather than building one and retrofitting the other — was the single most important architectural decision we made. It removed the excuse not to use it.",
+          "I also learned that in-context testing is irreplaceable. Reviewing components in Figma told us what they looked like. Watching a salon professional use them on a busy Saturday morning told us whether they actually worked. There is no substitute for that gap."
+        ],
+        "nextProject": {
+          "id": 4,
+          "label": "Next Project",
+          "title": "Flowe App"
+        }
+      },
+      "image": "images/img-1773333027969.png"
+    },
+    {
+      "id": 4,
+      "client": "Flowe · Sketchin",
+      "title": "Flowe App",
+      "tag": "Product design",
+      "year": "2020",
+      "gradient": "g3",
+      "detail": {
+        "headerTag": "Flowe · 2020",
+        "title": "Flowe App",
+        "meta": [
+          {
+            "label": "Client",
+            "value": "Flowe"
+          },
+          {
+            "label": "My Role",
+            "value": "UX Design"
+          },
+          {
+            "label": "Agency",
+            "value": "Sketchin"
+          },
+          {
+            "label": "Duration",
+            "value": "~6 months"
+          }
+        ],
+        "heroGradient": "g3",
+        "outcome": "<p data-start=\"129\" data-end=\"251\">Flowe launched as one of the first Italian mobile banks to connect financial behavior with lifestyle and sustainability.</p><p>\n</p><p data-start=\"258\" data-end=\"494\">The app gave users a single place to manage their money, track their wellbeing, and build positive habits, all brought together through a dynamic homepage that changed shape based on how they were performing across four key dimensions</p>",
+        "impact": [
+          {
+            "num": "16k",
+            "desc": "Active users in 7 days from the launch press presentation"
+          },
+          {
+            "num": "53",
+            "desc": "Weekly iterations"
+          },
+          {
+            "num": "4-10",
+            "desc": "Designers involved"
+          }
+        ],
+        "sections": [
+          {
+            "label": "The Challenge",
+            "title": "Banking that means something",
+            "text": "<p data-start=\"129\" data-end=\"251\">Flowe launched as one of the first Italian mobile banks to connect financial behavior with lifestyle and sustainability.</p><p>\n</p><p data-start=\"258\" data-end=\"494\">The app gave users a single place to manage their money, track their wellbeing, and build positive habits, all brought together through a dynamic homepage that changed shape based on how they were performing across four key dimensions.</p>",
+            "gradient": "g3",
+            "reverse": false,
+            "image": "images/img-1774343015482.png"
+          },
+          {
+            "label": "The Work",
+            "title": "The homepage as a mirror",
+            "text": "<p>The centrepiece was a dynamic visual bubble on the homepage. An organic shape that literally reflected the user's balance across the four impact areas. It shifted based on real data: savings progress, Virtuoso fitness activity, courses completed, trees planted via Treedom. It wasn't decorative. It was a status signal that told you, at a glance, who you were being that week.</p>",
+            "gradient": "g4",
+            "reverse": true,
+            "image": "images/img-1774342885253.png"
+          },
+          {
+            "label": "",
+            "title": "",
+            "text": "",
+            "gradient": "g1",
+            "image": "images/img-1774344033670.png",
+            "reverse": false,
+            "fullWidth": true
+          }
+        ],
+        "whatIDid": [
+          "Defined the UX epics across all banking and lifestyle features at the start of the project, creating a shared map for the Agile team to work from",
+          "Designed the core flows for financial awareness — savings goals, spending visualisation, and income tracking — from kick-off through to testing and rework",
+          "Designed the homepage dynamic visual concept: how the shape would behave, what data would drive it, and how to communicate its meaning to a first-time user",
+          "Collaborated on the integration model with Treedom and Virtuoso, translating third-party data into in-app moments users could actually feel",
+          "Contributed to the design system alongside the UI team, ensuring the visual language held together from core banking flows through to sustainability features"
+        ],
+        "whatILearned": [
+          "The most challenging part wasn't designing complex flows — it was designing meaning. The dynamic homepage visual looked simple in the final product, but behind it was a lot of work on what the shape should communicate, how quickly it should change, and how to avoid making users feel judged rather than supported.",
+          "Working in Agile at this scale also taught me that the kick-off phase is where the most important design decisions happen. The epics we defined in the first two weeks shaped everything that came after. Getting that structure right — before anyone had opened Figma — was the most valuable contribution I made to this project."
+        ],
+        "nextProject": {
+          "id": 5,
+          "label": "Next Project",
+          "title": "Sky Wi-Fi"
+        },
+        "heroImage": "images/img-1773779845808.png"
+      },
+      "image": "images/img-1773333132525.png"
+    },
+    {
+      "id": 5,
+      "client": "Sky · Sketchin",
+      "title": "Sky Wi-Fi",
+      "tag": "Service Design",
+      "year": "2018",
+      "gradient": "g4",
+      "detail": {
+        "headerTag": "Sky · Sketchin · 2018",
+        "title": "Sky Wi-Fi",
+        "meta": [
+          {
+            "label": "Client",
+            "value": "Sky"
+          },
+          {
+            "label": "My Role",
+            "value": "UX Design"
+          },
+          {
+            "label": "Agency",
+            "value": "Sketchin"
+          },
+          {
+            "label": "Duration",
+            "value": "~14 months"
+          }
+        ],
+        "heroGradient": "g4",
+        "outcome": "Sky Wi-Fi launched with a mapped, validated end-to-end customer journey covering more than 100 service capabilities. Every product owner had a clear, designed reference point for their area — and the gaps that would have caused costly rework in production were caught and resolved in design.",
+        "impact": [
+          {
+            "num": "100+",
+            "desc": "Service capabilities mapped and validated across the full customer journey"
+          },
+          {
+            "num": "5",
+            "desc": "Organisations coordinated: Sky, EY, Bip, Accenture, and Sketchin"
+          },
+          {
+            "num": "14mo",
+            "desc": "Sustained engagement from as-is mapping through QA and final delivery"
+          }
+        ],
+        "sections": [
+          {
+            "label": "The Challenge",
+            "title": "Designing a service at scale, with five organisations in the room",
+            "text": "Sky was launching a new broadband service — and needed to design not just screens, but every touchpoint a customer would encounter, from the first ad to the technician visit to the cancellation call. More than 100 distinct capabilities. Five organisations at the table. Fourteen months. The risk wasn't that we'd design something bad. It was that the pieces wouldn't connect.",
+            "gradient": "g4",
+            "reverse": false
+          },
+          {
+            "label": "The Work",
+            "title": "Making the invisible visible — and reviewable",
+            "text": "Sketchin's role was to map every phase of the experience and make it useful as a guide for product owners across all workstreams. That meant co-creating with subject matter experts, translating their domain knowledge into designed flows, and then reviewing every mockup for consistency and usability — catching untreated edge cases before they became product bugs.",
+            "gradient": "g5",
+            "reverse": true,
+            "image": "images/img-1773781853698.png",
+            "fullWidth": true
+          }
+        ],
+        "whatIDid": [
+          "Mapped the as-is customer journey across all major service touchpoints, identifying gaps and uncovered scenarios that no one had formally documented",
+          "Co-created detailed experience flows with Sky SMEs, translating domain-specific knowledge into designed screens product owners could use as a working reference",
+          "Reviewed all designed mockups for consistency and usability across the full service scope — flagging missing edge cases and misalignments before they reached development",
+          "Coordinated with analysts from EY and Bip to ensure the experience design reflected the operational realities of the service — not just the ideal-state scenario",
+          "Maintained design quality across a project that was intentionally fragmented by workstream, ensuring the customer experience read as a single coherent journey end-to-end"
+        ],
+        "whatILearned": [
+          "Scale changes the nature of design work. On a project with 100+ capabilities and five organisations, the most important design skill is synthesis — knowing how to take what SMEs know, what analysts have measured, and what engineers can build, and turn it into something a product owner can act on.",
+          "I also learned that QA is not the end of design — it's a continuation of it. Every inconsistency we caught in the review phase was a design problem that had been deferred, not avoided. The discipline to hold quality across a fragmented project is its own kind of craft."
+        ],
+        "nextProject": {
+          "id": 6,
+          "label": "Next Project",
+          "title": "My Ferrari Mobile"
+        },
+        "heroImage": "images/img-1773781901467.png"
+      },
+      "image": "images/img-1773333109932.png"
+    },
+    {
+      "id": 6,
+      "client": "Ferrari",
+      "title": "My Ferrari Mobile",
+      "tag": "Mobile App",
+      "year": "2019",
+      "gradient": "g5",
+      "detail": {
+        "headerTag": "Mobile App · Ferrari",
+        "title": "My Ferrari Mobile",
+        "meta": [
+          {
+            "label": "Client",
+            "value": "Ferrari"
+          },
+          {
+            "label": "My Role",
+            "value": "Product Designer"
+          },
+          {
+            "label": "Type",
+            "value": "Mobile App"
+          },
+          {
+            "label": "Focus",
+            "value": "Owner Experience"
+          }
+        ],
+        "heroGradient": "g5",
+        "outcome": "Ferrari owners received a mobile experience that felt native to the brand — personal, precise, and built around the moments that matter most to someone who owns one of the world's most iconic cars. The app connected drivers to their vehicle history, service, and the Ferrari community in a single, crafted interface.",
+        "impact": [
+          {
+            "num": "1",
+            "desc": "Unified app replacing fragmented owner touchpoints across web, paper, and phone"
+          },
+          {
+            "num": "High",
+            "desc": "User satisfaction among one of the world's most demanding and brand-aware audiences"
+          },
+          {
+            "num": "0",
+            "desc": "Compromise on brand standards — every detail reviewed against Ferrari's expectation of perfection"
+          }
+        ],
+        "sections": [
+          {
+            "label": "The Challenge",
+            "title": "Designing for the most demanding users in the world",
+            "text": "Ferrari owners don't just own a car — they have a relationship with a legend. The brief was to build an app worthy of that relationship: one that gave owners access to their car's history, upcoming service, exclusive events, and the broader Ferrari world. The challenge wasn't features. It was standard. Everything had to feel like Ferrari — or it wasn't good enough.",
+            "gradient": "g5",
+            "reverse": false
+          },
+          {
+            "label": "The Work",
+            "title": "Craft at every level of the stack",
+            "text": "We began with deep brand immersion — understanding not just Ferrari's visual identity but the emotional register of the brand and how owners experience it. Owner research revealed that the relationship is deeply personal and pride-based. Every screen was designed to honour that: clear hierarchy, restrained motion, typography treated as a precision instrument, and not a single element that felt generic or off-brand.",
+            "gradient": "g1",
+            "reverse": true
+          }
+        ],
+        "whatIDid": [
+          "Led the owner research phase — interviewing Ferrari owners to understand the moments, emotions, and information they most valued in their relationship with the brand",
+          "Designed the core owner flows: vehicle history, service scheduling, event access, and the personal connection features that distinguished this from a generic car app",
+          "Developed the interaction model — defining how transitions, gestures, and states should behave to feel premium without being theatrical",
+          "Reviewed every design decision against Ferrari's brand standards, working closely with the client team to ensure nothing slipped through that felt generic or misaligned",
+          "Delivered a comprehensive design specification that gave the engineering team the detail they needed to build to the same level of finish we had designed to"
+        ],
+        "whatILearned": [
+          "Working with Ferrari taught me that luxury is not a style — it's a standard of attention. The details that most products treat as edge cases are, for Ferrari, the main event. A loading state, a transition timing, a label that's two words instead of one — these things matter enormously when the user is someone who chose this brand precisely because it doesn't cut corners.",
+          "I also came away with a much stronger sense of how brand fluency changes the nature of design work. The more deeply you understand what a brand stands for and why, the more confident you can be in every decision — and the faster you can move, because you're not second-guessing whether something feels right."
+        ],
+        "nextProject": {
+          "id": 1,
+          "label": "Next Project",
+          "title": "Elevate Documents — Deel"
+        }
+      }
+    }
+  ],
+  "customCSS": ""
+}

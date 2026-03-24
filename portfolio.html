@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matteo Martin — Product Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <span class="nav-logo" onclick="showPage('home')">
+    <span class="logo-mm">
+      <span class="logo-letter" style="transition-delay:0.08s">M</span><span class="logo-letter" style="transition-delay:0.04s">M</span>
+    </span>
+    <span class="logo-full-name" style="position:absolute;">
+      <span class="logo-letter" style="transition-delay:0.00s">M</span><span class="logo-letter" style="transition-delay:0.03s">a</span><span class="logo-letter" style="transition-delay:0.06s">t</span><span class="logo-letter" style="transition-delay:0.09s">t</span><span class="logo-letter" style="transition-delay:0.12s">e</span><span class="logo-letter" style="transition-delay:0.15s">o</span><span class="logo-letter" style="transition-delay:0.18s">&nbsp;</span><span class="logo-letter" style="transition-delay:0.21s">M</span><span class="logo-letter" style="transition-delay:0.24s">a</span><span class="logo-letter" style="transition-delay:0.27s">r</span><span class="logo-letter" style="transition-delay:0.30s">t</span><span class="logo-letter" style="transition-delay:0.33s">i</span><span class="logo-letter" style="transition-delay:0.36s">n</span>
+    </span>
+  </span>
+  <div class="nav-social-links">
+    <a href="https://www.linkedin.com/in/matteo-martin-266a7293/">LI</a>
+    <a href="#">CV</a>
+  </div>
+</nav>
+
+<div class="dock" id="dock"></div>
+
+<!-- HOME -->
+<div class="page active" id="home">
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-headline-wrap">
+        <h1 class="hero-headline">Digital Product Designer at Deel. 10+ years of craft. <br>Driven by new tech, inspired by music, <br>and dedicated to making the complex feel simple</h1>
+      </div>
+      <section class="projects" id="projects-section">
+        <div class="case-studies-label">Case studies</div>
+        <div class="projects-list">
+
+          <div class="pcard" data-gradient="g1" data-image="images/img-1773779658028.png" onclick="requestProject(2)">
+            <div class="pcard-left">
+              <div class="pcard-info">
+                <div class="pcard-client">Casavo<span class="pcard-year">2022</span></div>
+                <div class="pcard-title">Design Team</div>
+              </div>
+            </div>
+            <div class="pcard-right"><div class="pcard-img" style="background-image:url('images/img-1773779658028.png');background-size:cover;background-position:center;"></div></div>
+          </div>
+
+          <div class="pcard" data-gradient="g2" data-image="images/img-1773333027969.png" onclick="requestProject(3)">
+            <div class="pcard-left">
+              <div class="pcard-info">
+                <div class="pcard-client">Treatwell<span class="pcard-year">2021</span></div>
+                <div class="pcard-title">Treatwell PRO</div>
+              </div>
+            </div>
+            <div class="pcard-right"><div class="pcard-img" style="background-image:url('images/img-1773333027969.png');background-size:cover;background-position:center;"></div></div>
+          </div>
+
+          <div class="pcard" data-gradient="g3" data-image="images/img-1773333132525.png" onclick="requestProject(4)">
+            <div class="pcard-left">
+              <div class="pcard-info">
+                <div class="pcard-client">Flowe · Sketchin<span class="pcard-year">2020</span></div>
+                <div class="pcard-title">Flowe App</div>
+              </div>
+            </div>
+            <div class="pcard-right"><div class="pcard-img" style="background-image:url('images/img-1773333132525.png');background-size:cover;background-position:center;"></div></div>
+          </div>
+
+          <div class="pcard" data-gradient="g4" data-image="images/img-1773333109932.png" onclick="requestProject(5)">
+            <div class="pcard-left">
+              <div class="pcard-info">
+                <div class="pcard-client">Sky · Sketchin<span class="pcard-year">2018</span></div>
+                <div class="pcard-title">Sky Wi-Fi</div>
+              </div>
+            </div>
+            <div class="pcard-right"><div class="pcard-img" style="background-image:url('images/img-1773333109932.png');background-size:cover;background-position:center;"></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="hero-right">
+      <div class="sphere-wrap" id="sphereWrap"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span class="footer-copy">Matteo Martin © 2026</span>
+    <div class="footer-links">
+      <a href="mailto:martinmatteo@outlook.com">martinmatteo@outlook.com</a>
+      <a href="tel:"></a>
+    </div>
+  </footer>
+</div>
+
+<!-- PROJECT PAGES -->
+
+<!-- ── Project 1: Elevate Documents Experience ── -->
+<div class="page" id="project-1">
+  <div class="proj-page">
+    <button class="back-btn" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to work
+    </button>
+
+    <div class="proj-header">
+      <span class="proj-tag">Deel · 2025</span>
+      <h1 class="proj-title">Elevate Documents Experience</h1>
+      <div class="proj-meta">
+        <div class="meta-item"><div class="meta-label">Company</div><div class="meta-val">Deel</div></div>
+        <div class="meta-item"><div class="meta-label">My Role</div><div class="meta-val">Product Designer</div></div>
+        <div class="meta-item"><div class="meta-label">Topic</div><div class="meta-val">Product Design</div></div>
+        <div class="meta-item"><div class="meta-label">Year</div><div class="meta-val">2025</div></div>
+      </div>
+    </div>
+
+    <div class="proj-hero g6"></div>
+
+    <div class="proj-outcome">
+      <div class="proj-outcome-label">Outcome</div>
+      <div class="proj-outcome-text"><p>Deel's documents experience was redesigned from the ground up — transforming a fragmented, friction-heavy flow into a fast, intuitive system that lets HR teams and contractors create, sign, and manage documents without leaving the platform. The result reduced time-to-completion and positioned documents as a first-class product within Deel's ecosystem.</p></div>
+    </div>
+
+    <div class="proj-impact">
+      <div class="impact-item">
+        <div class="impact-num">↓</div>
+        <div class="impact-desc">Significant reduction in document completion time across key user journeys</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">1</div>
+        <div class="impact-desc">Unified document creation, signing, and management flow replacing multiple disconnected entry points</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">Global</div>
+        <div class="impact-desc">Designed to serve Deel's multinational user base across dozens of contract types and legal contexts</div>
+      </div>
+    </div>
+
+    
+    <div class="proj-section">
+      <div class="proj-section-img g6"></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-title">Documents were an afterthought in a platform built on them</div>
+        <div class="proj-section-text"><p>At Deel, documents are foundational — contracts, NDAs, amendments, and compliance files underpin every hiring and payment flow. But the experience had grown organically: multiple entry points, inconsistent states, unclear ownership of actions. Users — both HR teams and contractors — were confused about where to go, what was pending, and what needed their attention. Documents needed to become a product, not a feature.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section reverse">
+      <div class="proj-section-img g1"></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-title">Clarity through structure, speed through simplicity</div>
+        <div class="proj-section-text"><p>The redesign focused on three things: clear status at a glance, a single coherent flow for every document action, and a creation experience that felt fast and trustworthy. We mapped every document state — draft, pending, signed, expired — and gave each a clear visual language. <br><br>Template management, bulk actions, and signing flows were consolidated into a system that worked the same way regardless of document type or legal context.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-did">
+      <div class="proj-did-label">What I did</div>
+      <ul class="proj-did-list">
+        <li>Led end-to-end design for the documents hub — from the initial audit of the existing experience through to final handoff specifications</li>
+        <li>Defined the information architecture for document states, making pending actions and status immediately legible for both senders and recipients</li>
+        <li>Designed the unified document creation flow, reducing a multi-step process with ambiguous entry points into a single, guided experience</li>
+        <li>Collaborated closely with legal and compliance stakeholders to ensure the design accommodated the full range of contract types and international requirements Deel operates across</li>
+        <li>Built and maintained the component library extensions required for the documents system, ensuring consistency with Deel's broader design system</li>
+        <li>Ran usability testing sessions with HR managers and contractors to validate the new flows before development, iterating on friction points surfaced in testing</li>
+      </ul>
+    </div>
+
+    <div class="proj-learned">
+      <div class="proj-learned-label">What I learned</div>
+      <div class="proj-learned-content">
+        <p>Designing for compliance-heavy contexts forces a kind of precision that most product design doesn't require. Every label, every state, every action had legal implications — which meant the usual instinct to simplify had to be balanced against the need for accuracy. I came away with a much sharper understanding of how to make something feel simple without hiding complexity that users actually need to see.</p>
+        <p>Working at Deel's scale also taught me how important system thinking is at the point of delivery, not just at the point of design. The documents feature touched payment flows, notification systems, and third-party integrations. Designing it well meant understanding those dependencies deeply — not just the screens I was responsible for, but everything adjacent that could break if we got something wrong.</p>
+      </div>
+    </div>
+    
+    <div class="next-proj" onclick="showProject(2)">
+      <div><div class="next-label">First Project</div><div class="next-t">Design Team — Casavo</div></div>
+      <div class="next-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Project 2: Design Team ── -->
+<div class="page" id="project-2">
+  <div class="proj-page">
+    <button class="back-btn" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to work
+    </button>
+
+    <div class="proj-header">
+      <span class="proj-tag">Casavo · 2022</span>
+      <h1 class="proj-title">Design Team</h1>
+      <div class="proj-meta">
+        <div class="meta-item"><div class="meta-label">Company</div><div class="meta-val">Casavo</div></div>
+        <div class="meta-item"><div class="meta-label">My Role</div><div class="meta-val">Product Design Lead</div></div>
+        <div class="meta-item"><div class="meta-label">Duration</div><div class="meta-val">6 months</div></div>
+        <div class="meta-item"><div class="meta-label">Year</div><div class="meta-val">2022</div></div>
+      </div>
+    </div>
+
+    <div class="proj-hero g1"></div>
+
+    <div class="proj-outcome">
+      <div class="proj-outcome-label">Outcome</div>
+      <div class="proj-outcome-text"><p>Casavo went from having no formal design practice to a fully operational team with clear roles, shared rituals, and a unified knowledge base — all within six months. Design decisions became visible, traceable, and trusted across the organisation.</p></div>
+    </div>
+
+    <div class="proj-impact">
+      <div class="impact-item">
+        <div class="impact-num">2×</div>
+        <div class="impact-desc">Increase in design output velocity after standardising file and delivery structure</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">3</div>
+        <div class="impact-desc">Linked Notion databases built to connect research, users, and product insights</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">3</div>
+        <div class="impact-desc">Weekly design ceremonies introduced with concrete goals and cross-team participation</div>
+      </div>
+    </div>
+
+    
+    <div class="proj-section">
+      <div class="proj-section-img"><img src="images/img-1774289065929.jpg" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-title">Building from zero, with no playbook</div>
+        <div class="proj-section-text"><p data-start="153" data-end="364">When I joined Casavo, design barely existed. There were no defined roles, no shared rituals, and no agreed-upon deliverables. Engineering and Strategy had little visibility into what design was doing — or why.</p><p>
+</p><p data-start="371" data-end="450">The first challenge wasn’t designing screens. It was designing the team itself</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section reverse">
+      <div class="proj-section-img"><img src="images/img-1774288667217.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-title">Ceremonies, artifacts, and a single source of truth</div>
+        <div class="proj-section-text"><p data-start="142" data-end="279">We began by setting up a structured approach to our work, built around three core pillars: Responsibilities, Ceremonies, and Artifacts.</p><p data-start="286" data-end="419">First, we clarified the responsibilities and boundaries of each role, creating a shared understanding of ownership across the team.</p><p data-start="286" data-end="419"><br></p><p data-start="426" data-end="588">We then defined clear goals for our ceremonies, turning them into meaningful moments for sharing progress, aligning, and continuously improving the way we work.</p><p data-start="426" data-end="588"><br></p><p>
+
+
+</p><p data-start="595" data-end="875">Finally, we worked closely with Strategy and Engineering to better understand their needs from our design files. This led us to design a new structure and improve the overall organization of our deliverables, making them more accessible and effective for cross-team collaboration</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section full-width">
+      <div class="proj-section-img"><img src="images/img-1774288381661.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">Artifact</div>
+        <div class="proj-section-title">Notion as north star</div>
+        <div class="proj-section-text"><p data-start="182" data-end="316">We chose Notion as a single source of truth to document all our practices and decisions, and to use it as a repository for our data.</p><p data-start="323" data-end="407">Specifically, for discovery activities, we defined three interconnected databases:</p><p data-start="414" data-end="503"><ul><li><strong data-start="414" data-end="436">Research Projects:</strong> <i>which map each discovery activity, including the owner and date.</i></li><li><strong data-start="510" data-end="520">Users:</strong> <i>which contains all our users, along with their contact details and brief feedback.</i></li><li><strong data-start="612" data-end="625">Insights:</strong> <i>which includes a synthesis of the feedback gathered from research. We use it to align with Strategy and plan the next design activities</i></li></ul></p><p>
+
+
+
+</p></div>
+      </div>
+    </div>
+
+    <div class="proj-did">
+      <div class="proj-did-label">What I did</div>
+      <ul class="proj-did-list">
+        <li>Defined role boundaries for Product Designer and Content Designer, removing ambiguity that had caused duplicated effort and missed handoffs</li>
+        <li>Designed and facilitated four recurring ceremonies, setting explicit success criteria for each so they never became empty rituals</li>
+        <li>Negotiated a unified file and delivery structure with engineering and strategy leads, reducing rework at handoff by standardising what &quot;done&quot; looks like</li>
+        <li><p>Built three linked Notion databases: <b>Research</b> <b>Projects </b>and&nbsp;<b>Users</b>, Insights making the team's knowledge navigable and useful for planning</p></li>
+        <li>Ran the first cross-functional UX Review, establishing it as a recurring space where design decisions were explained and challenged openly</li>
+      </ul>
+    </div>
+
+    <div class="proj-learned">
+      <div class="proj-learned-label">What I learned</div>
+      <div class="proj-learned-content">
+        <p>The hardest part of building a design team isn't the design — it's the politics. Getting engineers and strategists to trust a new process requires showing up consistently before asking for anything in return. The ceremonies only worked because I ran them rigorously even when attendance was low.</p>
+        <p>I also learned that documentation is a form of design. The Notion system only became useful when I treated it like a product: with real information architecture, clear ownership, and a feedback loop. A repository no one uses is just organised clutter.</p>
+      </div>
+    </div>
+    
+    <div class="next-proj" onclick="showProject(3)">
+      <div><div class="next-label">Next Project</div><div class="next-t">Treatwell PRO</div></div>
+      <div class="next-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Project 3: Treatwell PRO ── -->
+<div class="page" id="project-3">
+  <div class="proj-page">
+    <button class="back-btn" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to work
+    </button>
+
+    <div class="proj-header">
+      <span class="proj-tag">Treatwell · 2021</span>
+      <h1 class="proj-title">Treatwell PRO</h1>
+      <div class="proj-meta">
+        <div class="meta-item"><div class="meta-label">Company</div><div class="meta-val">Treatwell</div></div>
+        <div class="meta-item"><div class="meta-label">My Role</div><div class="meta-val">Product Designer</div></div>
+        <div class="meta-item"><div class="meta-label">Duration</div><div class="meta-val">&gt; 6 months</div></div>
+        <div class="meta-item"><div class="meta-label">Year</div><div class="meta-val">2021</div></div>
+      </div>
+    </div>
+
+    <div class="proj-hero g2"></div>
+
+    <div class="proj-outcome">
+      <div class="proj-outcome-label">Outcome</div>
+      <div class="proj-outcome-text"><p>Treatwell shipped a stable, three-tier design system — covering foundations, B2B, and B2C — mirrored in both Figma and Storybook. Design velocity increased, cross-team inconsistencies dropped, and the system became something every designer and engineer could contribute to without breaking.</p></div>
+    </div>
+
+    <div class="proj-impact">
+      <div class="impact-item">
+        <div class="impact-num">3</div>
+        <div class="impact-desc">Library tiers built: Aphrodite (foundations), Armonia (B2B), Eros (B2C)</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">Bi-weekly</div>
+        <div class="impact-desc">In-salon shadowing sessions to validate components with real professionals</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">1.0</div>
+        <div class="impact-desc">Stable release shipped with documented contribution and maintenance processes</div>
+      </div>
+    </div>
+
+    
+    <div class="proj-section">
+      <div class="proj-section-img g2"></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-title">One company, two platforms, zero consistency</div>
+        <div class="proj-section-text"><p>Treatwell runs a B2B product for salon professionals and a B2C platform for customers. Both had grown independently, developing overlapping but misaligned component libraries. The cost was real: duplicated work, visual inconsistencies, and a codebase where changing one thing broke another. The system needed to be rebuilt from the ground up, not patched.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section reverse">
+      <div class="proj-section-img"><img src="images/img-1773781165391.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-title">Architecture first, components second</div>
+        <div class="proj-section-text"><p>We proposed a three-tier structure: a shared foundation layer (Aphrodite) containing tokens, typography, and colour; a B2B UI library (Armonia) for the salon management product; and a B2C platform library (Eros) for the consumer app. Every layer was mirrored in Figma and Storybook. Weekly co-creation sessions shaped the roadmap, while bi-weekly shadowing in real salons validated components in the wild.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-did">
+      <div class="proj-did-label">What I did</div>
+      <ul class="proj-did-list">
+        <li>Audited the existing Figma libraries and Storybook to map duplications and identify where the two platforms diverged most critically</li>
+        <li>Proposed and defined the three-tier architecture with the core team, getting buy-in from both design and engineering before building anything</li>
+        <li>Led weekly roadmap sessions, balancing component creation with maintenance governance and contribution guidelines</li>
+        <li>Designed and ran bi-weekly shadowing sessions with salon professionals — sitting with users in their working environment to observe how components performed under real conditions</li>
+        <li>Wrote the contribution and issue-reporting process that allowed anyone in the company to participate without degrading quality</li>
+      </ul>
+    </div>
+
+    <div class="proj-learned">
+      <div class="proj-learned-label">What I learned</div>
+      <div class="proj-learned-content">
+        <p>A design system only works if engineers trust it as much as designers do. Mirroring Figma and Storybook from the start — rather than building one and retrofitting the other — was the single most important architectural decision we made. It removed the excuse not to use it.</p>
+        <p>I also learned that in-context testing is irreplaceable. Reviewing components in Figma told us what they looked like. Watching a salon professional use them on a busy Saturday morning told us whether they actually worked. There is no substitute for that gap.</p>
+      </div>
+    </div>
+    
+    <div class="next-proj" onclick="showProject(4)">
+      <div><div class="next-label">Next Project</div><div class="next-t">Flowe App</div></div>
+      <div class="next-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Project 4: Flowe App ── -->
+<div class="page" id="project-4">
+  <div class="proj-page">
+    <button class="back-btn" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to work
+    </button>
+
+    <div class="proj-header">
+      <span class="proj-tag">Flowe · 2020</span>
+      <h1 class="proj-title">Flowe App</h1>
+      <div class="proj-meta">
+        <div class="meta-item"><div class="meta-label">Client</div><div class="meta-val">Flowe</div></div>
+        <div class="meta-item"><div class="meta-label">My Role</div><div class="meta-val">UX Design</div></div>
+        <div class="meta-item"><div class="meta-label">Agency</div><div class="meta-val">Sketchin</div></div>
+        <div class="meta-item"><div class="meta-label">Duration</div><div class="meta-val">~6 months</div></div>
+      </div>
+    </div>
+
+    <div class="proj-hero" style="background-image:url('images/img-1773779845808.png');background-size:cover;background-position:center;"></div>
+
+    <div class="proj-outcome">
+      <div class="proj-outcome-label">Outcome</div>
+      <div class="proj-outcome-text"><p data-start="129" data-end="251">Flowe launched as one of the first Italian mobile banks to connect financial behavior with lifestyle and sustainability.</p><p>
+</p><p data-start="258" data-end="494">The app gave users a single place to manage their money, track their wellbeing, and build positive habits, all brought together through a dynamic homepage that changed shape based on how they were performing across four key dimensions</p></div>
+    </div>
+
+    <div class="proj-impact">
+      <div class="impact-item">
+        <div class="impact-num">16k</div>
+        <div class="impact-desc">Active users in 7 days from the launch press presentation</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">53</div>
+        <div class="impact-desc">Weekly iterations</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">4-10</div>
+        <div class="impact-desc">Designers involved</div>
+      </div>
+    </div>
+
+    
+    <div class="proj-section">
+      <div class="proj-section-img"><img src="images/img-1774343015482.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-title">Banking that means something</div>
+        <div class="proj-section-text"><p data-start="129" data-end="251">Flowe launched as one of the first Italian mobile banks to connect financial behavior with lifestyle and sustainability.</p><p>
+</p><p data-start="258" data-end="494">The app gave users a single place to manage their money, track their wellbeing, and build positive habits, all brought together through a dynamic homepage that changed shape based on how they were performing across four key dimensions.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section reverse">
+      <div class="proj-section-img"><img src="images/img-1774342885253.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-title">The homepage as a mirror</div>
+        <div class="proj-section-text"><p>The centrepiece was a dynamic visual bubble on the homepage. An organic shape that literally reflected the user's balance across the four impact areas. It shifted based on real data: savings progress, Virtuoso fitness activity, courses completed, trees planted via Treedom. It wasn't decorative. It was a status signal that told you, at a glance, who you were being that week.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section full-width">
+      <div class="proj-section-img"><img src="images/img-1774344033670.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label"></div>
+        <div class="proj-section-title"></div>
+        <div class="proj-section-text"></div>
+      </div>
+    </div>
+
+    <div class="proj-did">
+      <div class="proj-did-label">What I did</div>
+      <ul class="proj-did-list">
+        <li>Defined the UX epics across all banking and lifestyle features at the start of the project, creating a shared map for the Agile team to work from</li>
+        <li>Designed the core flows for financial awareness — savings goals, spending visualisation, and income tracking — from kick-off through to testing and rework</li>
+        <li>Designed the homepage dynamic visual concept: how the shape would behave, what data would drive it, and how to communicate its meaning to a first-time user</li>
+        <li>Collaborated on the integration model with Treedom and Virtuoso, translating third-party data into in-app moments users could actually feel</li>
+        <li>Contributed to the design system alongside the UI team, ensuring the visual language held together from core banking flows through to sustainability features</li>
+      </ul>
+    </div>
+
+    <div class="proj-learned">
+      <div class="proj-learned-label">What I learned</div>
+      <div class="proj-learned-content">
+        <p>The most challenging part wasn't designing complex flows — it was designing meaning. The dynamic homepage visual looked simple in the final product, but behind it was a lot of work on what the shape should communicate, how quickly it should change, and how to avoid making users feel judged rather than supported.</p>
+        <p>Working in Agile at this scale also taught me that the kick-off phase is where the most important design decisions happen. The epics we defined in the first two weeks shaped everything that came after. Getting that structure right — before anyone had opened Figma — was the most valuable contribution I made to this project.</p>
+      </div>
+    </div>
+    
+    <div class="next-proj" onclick="showProject(5)">
+      <div><div class="next-label">Next Project</div><div class="next-t">Sky Wi-Fi</div></div>
+      <div class="next-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Project 5: Sky Wi-Fi ── -->
+<div class="page" id="project-5">
+  <div class="proj-page">
+    <button class="back-btn" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to work
+    </button>
+
+    <div class="proj-header">
+      <span class="proj-tag">Sky · Sketchin · 2018</span>
+      <h1 class="proj-title">Sky Wi-Fi</h1>
+      <div class="proj-meta">
+        <div class="meta-item"><div class="meta-label">Client</div><div class="meta-val">Sky</div></div>
+        <div class="meta-item"><div class="meta-label">My Role</div><div class="meta-val">UX Design</div></div>
+        <div class="meta-item"><div class="meta-label">Agency</div><div class="meta-val">Sketchin</div></div>
+        <div class="meta-item"><div class="meta-label">Duration</div><div class="meta-val">~14 months</div></div>
+      </div>
+    </div>
+
+    <div class="proj-hero" style="background-image:url('images/img-1773781901467.png');background-size:cover;background-position:center;"></div>
+
+    <div class="proj-outcome">
+      <div class="proj-outcome-label">Outcome</div>
+      <div class="proj-outcome-text"><p>Sky Wi-Fi launched with a mapped, validated end-to-end customer journey covering more than 100 service capabilities. Every product owner had a clear, designed reference point for their area — and the gaps that would have caused costly rework in production were caught and resolved in design.</p></div>
+    </div>
+
+    <div class="proj-impact">
+      <div class="impact-item">
+        <div class="impact-num">100+</div>
+        <div class="impact-desc">Service capabilities mapped and validated across the full customer journey</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">5</div>
+        <div class="impact-desc">Organisations coordinated: Sky, EY, Bip, Accenture, and Sketchin</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">14mo</div>
+        <div class="impact-desc">Sustained engagement from as-is mapping through QA and final delivery</div>
+      </div>
+    </div>
+
+    
+    <div class="proj-section">
+      <div class="proj-section-img g4"></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-title">Designing a service at scale, with five organisations in the room</div>
+        <div class="proj-section-text"><p>Sky was launching a new broadband service — and needed to design not just screens, but every touchpoint a customer would encounter, from the first ad to the technician visit to the cancellation call. More than 100 distinct capabilities. Five organisations at the table. Fourteen months. The risk wasn't that we'd design something bad. It was that the pieces wouldn't connect.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section reverse full-width">
+      <div class="proj-section-img"><img src="images/img-1773781853698.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-title">Making the invisible visible — and reviewable</div>
+        <div class="proj-section-text"><p>Sketchin's role was to map every phase of the experience and make it useful as a guide for product owners across all workstreams. That meant co-creating with subject matter experts, translating their domain knowledge into designed flows, and then reviewing every mockup for consistency and usability — catching untreated edge cases before they became product bugs.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-did">
+      <div class="proj-did-label">What I did</div>
+      <ul class="proj-did-list">
+        <li>Mapped the as-is customer journey across all major service touchpoints, identifying gaps and uncovered scenarios that no one had formally documented</li>
+        <li>Co-created detailed experience flows with Sky SMEs, translating domain-specific knowledge into designed screens product owners could use as a working reference</li>
+        <li>Reviewed all designed mockups for consistency and usability across the full service scope — flagging missing edge cases and misalignments before they reached development</li>
+        <li>Coordinated with analysts from EY and Bip to ensure the experience design reflected the operational realities of the service — not just the ideal-state scenario</li>
+        <li>Maintained design quality across a project that was intentionally fragmented by workstream, ensuring the customer experience read as a single coherent journey end-to-end</li>
+      </ul>
+    </div>
+
+    <div class="proj-learned">
+      <div class="proj-learned-label">What I learned</div>
+      <div class="proj-learned-content">
+        <p>Scale changes the nature of design work. On a project with 100+ capabilities and five organisations, the most important design skill is synthesis — knowing how to take what SMEs know, what analysts have measured, and what engineers can build, and turn it into something a product owner can act on.</p>
+        <p>I also learned that QA is not the end of design — it's a continuation of it. Every inconsistency we caught in the review phase was a design problem that had been deferred, not avoided. The discipline to hold quality across a fragmented project is its own kind of craft.</p>
+      </div>
+    </div>
+    
+    <div class="next-proj" onclick="showProject(6)">
+      <div><div class="next-label">Next Project</div><div class="next-t">My Ferrari Mobile</div></div>
+      <div class="next-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Project 6: My Ferrari Mobile ── -->
+<div class="page" id="project-6">
+  <div class="proj-page">
+    <button class="back-btn" onclick="showPage('home')">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to work
+    </button>
+
+    <div class="proj-header">
+      <span class="proj-tag">Mobile App · Ferrari</span>
+      <h1 class="proj-title">My Ferrari Mobile</h1>
+      <div class="proj-meta">
+        <div class="meta-item"><div class="meta-label">Client</div><div class="meta-val">Ferrari</div></div>
+        <div class="meta-item"><div class="meta-label">My Role</div><div class="meta-val">Product Designer</div></div>
+        <div class="meta-item"><div class="meta-label">Type</div><div class="meta-val">Mobile App</div></div>
+        <div class="meta-item"><div class="meta-label">Focus</div><div class="meta-val">Owner Experience</div></div>
+      </div>
+    </div>
+
+    <div class="proj-hero g5"></div>
+
+    <div class="proj-outcome">
+      <div class="proj-outcome-label">Outcome</div>
+      <div class="proj-outcome-text"><p>Ferrari owners received a mobile experience that felt native to the brand — personal, precise, and built around the moments that matter most to someone who owns one of the world's most iconic cars. The app connected drivers to their vehicle history, service, and the Ferrari community in a single, crafted interface.</p></div>
+    </div>
+
+    <div class="proj-impact">
+      <div class="impact-item">
+        <div class="impact-num">1</div>
+        <div class="impact-desc">Unified app replacing fragmented owner touchpoints across web, paper, and phone</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">High</div>
+        <div class="impact-desc">User satisfaction among one of the world's most demanding and brand-aware audiences</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-num">0</div>
+        <div class="impact-desc">Compromise on brand standards — every detail reviewed against Ferrari's expectation of perfection</div>
+      </div>
+    </div>
+
+    
+    <div class="proj-section">
+      <div class="proj-section-img g5"></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-title">Designing for the most demanding users in the world</div>
+        <div class="proj-section-text"><p>Ferrari owners don't just own a car — they have a relationship with a legend. The brief was to build an app worthy of that relationship: one that gave owners access to their car's history, upcoming service, exclusive events, and the broader Ferrari world. The challenge wasn't features. It was standard. Everything had to feel like Ferrari — or it wasn't good enough.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section reverse">
+      <div class="proj-section-img g1"></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-title">Craft at every level of the stack</div>
+        <div class="proj-section-text"><p>We began with deep brand immersion — understanding not just Ferrari's visual identity but the emotional register of the brand and how owners experience it. Owner research revealed that the relationship is deeply personal and pride-based. Every screen was designed to honour that: clear hierarchy, restrained motion, typography treated as a precision instrument, and not a single element that felt generic or off-brand.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-did">
+      <div class="proj-did-label">What I did</div>
+      <ul class="proj-did-list">
+        <li>Led the owner research phase — interviewing Ferrari owners to understand the moments, emotions, and information they most valued in their relationship with the brand</li>
+        <li>Designed the core owner flows: vehicle history, service scheduling, event access, and the personal connection features that distinguished this from a generic car app</li>
+        <li>Developed the interaction model — defining how transitions, gestures, and states should behave to feel premium without being theatrical</li>
+        <li>Reviewed every design decision against Ferrari's brand standards, working closely with the client team to ensure nothing slipped through that felt generic or misaligned</li>
+        <li>Delivered a comprehensive design specification that gave the engineering team the detail they needed to build to the same level of finish we had designed to</li>
+      </ul>
+    </div>
+
+    <div class="proj-learned">
+      <div class="proj-learned-label">What I learned</div>
+      <div class="proj-learned-content">
+        <p>Working with Ferrari taught me that luxury is not a style — it's a standard of attention. The details that most products treat as edge cases are, for Ferrari, the main event. A loading state, a transition timing, a label that's two words instead of one — these things matter enormously when the user is someone who chose this brand precisely because it doesn't cut corners.</p>
+        <p>I also came away with a much stronger sense of how brand fluency changes the nature of design work. The more deeply you understand what a brand stands for and why, the more confident you can be in every decision — and the faster you can move, because you're not second-guessing whether something feels right.</p>
+      </div>
+    </div>
+    
+    <div class="next-proj" onclick="showProject(1)">
+      <div><div class="next-label">Next Project</div><div class="next-t">Elevate Documents — Deel</div></div>
+      <div class="next-arr"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+    </div>
+  </div>
+</div>
+
+<div class="proj-hover-img" id="projHoverImg">
+  <div class="pcard-img" id="projHoverImgInner"></div>
+</div>
+
+<!-- Password Modal -->
+<div class="pw-overlay" id="pwOverlay">
+  <div class="pw-box">
+    <button class="pw-close" id="pwClose">&#x2715;</button>
+    <span class="pw-label">Protected Content</span>
+    <h2 class="pw-title">Case Study Access</h2>
+    <p class="pw-sub">This project is password protected. Enter the access code to view the full case study.</p>
+    <div class="pw-input-wrap">
+      <input class="pw-input" id="pwInput" type="password" placeholder="Enter password" autocomplete="off" />
+      <button class="pw-toggle" id="pwToggle" tabindex="-1">
+        <svg id="eyeIcon" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+    </div>
+    <div class="pw-error" id="pwError"></div>
+    <button class="pw-btn" id="pwSubmit">Unlock Project</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>
