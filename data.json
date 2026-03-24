@@ -557,5 +557,5 @@
       }
     }
   ],
-  "customCSS": ""
+  "customCSS": ".projects-list {\n    gap: 24px;\n}"
 }

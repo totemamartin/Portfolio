@@ -302,3 +302,8 @@
     .hero-headline { font-size: clamp(16px, 5vw, 22px); }
     .proj-title { font-size: clamp(30px, 12vw, 44px); }
   }
+
+/* Custom CSS */
+.projects-list {
+    gap: 24px;
+}
