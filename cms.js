@@ -753,7 +753,8 @@ ${allProjectPages}
   function geoToPts(geo, count) {
     var arr = geo.attributes.position.array, result = [];
     for (var i = 0; i < arr.length; i += 3) result.push(new THREE.Vector3(arr[i], arr[i+1], arr[i+2]));
-    while (result.length < count) result.push(result[result.length - 1].clone());
+    var base = result.length;
+    while (result.length < count) { var idx = (result.length) % base; result.push(result[idx].clone()); }
     return result.slice(0, count);
   }
 
@@ -793,9 +794,9 @@ ${allProjectPages}
     } else if (s === 'torus') {
       pts = geoToPts(new THREE.TorusGeometry(0.76, 0.38, 32, 50), DOT_COUNT);
     } else if (s === 'icosahedron') {
-      pts = geoToPts(new THREE.IcosahedronGeometry(R * 0.92, 3), DOT_COUNT);
+      pts = geoToPts(new THREE.IcosahedronGeometry(R * 0.92, 4), DOT_COUNT);
     } else if (s === 'dodecahedron') {
-      pts = geoToPts(new THREE.DodecahedronGeometry(R * 0.88, 2), DOT_COUNT);
+      pts = geoToPts(new THREE.DodecahedronGeometry(R * 0.88, 4), DOT_COUNT);
     } else {
       pts = [];
       var uN = 80, vN = 20, RM = 0.86, w = 0.44;
