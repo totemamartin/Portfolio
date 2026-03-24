@@ -471,7 +471,7 @@ function generatePortfolio(data) {
     .sphere-wrap { width: 260px !important; height: 260px !important; }
     .sphere-wrap canvas { width: 260px !important; height: 260px !important; }
     .hero-headline { font-size: clamp(18px, 5vw, 28px); }
-    .projects { padding: 0 20px 60px; }
+    .projects { padding: 0; }
     .pcard:hover { opacity: 1; }
     .pcard-right { display: block; flex: 0 0 120px; height: 80px; border-radius: 12px; overflow: hidden; }
     .pcard-right .pcard-img { width: 100%; height: 100%; }
