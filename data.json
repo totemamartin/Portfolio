@@ -177,7 +177,7 @@
             "title": "Notion as north star",
             "text": "<p data-start=\"182\" data-end=\"316\">We chose Notion as a single source of truth to document all our practices and decisions, and to use it as a repository for our data.</p><p data-start=\"323\" data-end=\"407\">Specifically, for discovery activities, we defined three interconnected databases:</p><p data-start=\"414\" data-end=\"503\"><ul><li><strong data-start=\"414\" data-end=\"436\">Research Projects:</strong> <i>which map each discovery activity, including the owner and date.</i></li><li><strong data-start=\"510\" data-end=\"520\">Users:</strong> <i>which contains all our users, along with their contact details and brief feedback.</i></li><li><strong data-start=\"612\" data-end=\"625\">Insights:</strong> <i>which includes a synthesis of the feedback gathered from research. We use it to align with Strategy and plan the next design activities</i></li></ul></p><p>\n\n\n\n</p>",
             "gradient": "g1",
-            "image": "images/img-1774288381661.png",
+            "image": "images/img-1774360153668.png",
             "reverse": false,
             "fullWidth": true
           }
