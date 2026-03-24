@@ -37,7 +37,7 @@ function isVideo(path) { return path && /\.(mp4|webm|ogg|mov)$/i.test(path); }
 
 // Returns a full element string for image, video, or gradient
 // fit=true: image renders as <img> with natural proportions (no cropping)
-function mediaEl(image, gradient, baseClass, fit) {
+function mediaEl(image, gradient, baseClass, fit, lightbox) {
   if (image) {
     if (isVideo(image)) {
       const vStyle = fit
@@ -46,9 +46,11 @@ function mediaEl(image, gradient, baseClass, fit) {
       return `<div class="${baseClass}"><video autoplay muted loop playsinline src="${esc(image)}" style="${vStyle}"></video></div>`;
     }
     if (fit) {
-      return `<div class="${baseClass}"><img src="${esc(image)}" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>`;
+      const lbAttr = lightbox ? ` onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;"` : ` style="width:100%;height:auto;display:block;border-radius:inherit;"`;
+      return `<div class="${baseClass}"><img src="${esc(image)}" alt=""${lbAttr} /></div>`;
     }
-    return `<div class="${baseClass}" style="background-image:url('${esc(image)}');background-size:cover;background-position:center;"></div>`;
+    const lbAttr = lightbox ? ` onclick="openLightbox('${image.replace(/'/g, "\\'")}')" style="background-image:url('${esc(image)}');background-size:cover;background-position:center;cursor:zoom-in;"` : ` style="background-image:url('${esc(image)}');background-size:cover;background-position:center;"`;
+    return `<div class="${baseClass}"${lbAttr}></div>`;
   }
   return `<div class="${baseClass} ${esc(gradient)}"></div>`;
 }
@@ -99,7 +101,7 @@ function generatePortfolio(data) {
     const d = p.detail;
     const sections = d.sections.map(s => `
     <div class="proj-section${s.reverse ? ' reverse' : ''}${s.fullWidth ? ' full-width' : ''}">
-      ${mediaEl(s.image, s.gradient, 'proj-section-img', true)}
+      ${mediaEl(s.image, s.gradient, 'proj-section-img', true, true)}
       <div class="proj-section-body">
         <div class="proj-section-label">${esc(s.label)}</div>
         <div class="proj-section-title">${esc(s.title)}</div>
@@ -142,7 +144,7 @@ function generatePortfolio(data) {
       </div>
     </div>
 
-    ${mediaEl(d.heroImage, d.heroGradient, 'proj-hero')}
+    ${mediaEl(d.heroImage, d.heroGradient, 'proj-hero', false, true)}
 
     <div class="proj-outcome">
       <div class="proj-outcome-label">Outcome</div>
@@ -235,6 +237,13 @@ function generatePortfolio(data) {
     position: fixed; pointer-events: none; z-index: 9998;
     transform: translate(-50%, -50%);
   }
+
+  .img-lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:800; align-items:center; justify-content:center; cursor:zoom-out; }
+  .img-lightbox.open { display:flex; animation: lbIn 0.2s ease; }
+  @keyframes lbIn { from { opacity:0; } to { opacity:1; } }
+  .img-lightbox img { max-width:92vw; max-height:92vh; object-fit:contain; border-radius:8px; cursor:default; }
+  .img-lightbox-close { position:fixed; top:20px; right:24px; color:#fff; font-size:24px; cursor:pointer; background:none; border:none; opacity:0.6; line-height:1; padding:4px; }
+  .img-lightbox-close:hover { opacity:1; }
 
   .pw-overlay {
     position: fixed; inset: 0; z-index: 500;
@@ -614,6 +623,16 @@ ${allProjectPages}
     if (typeof window._resumeSphere === 'function') window._resumeSphere(id === 'home');
   }
 
+  function openLightbox(src) {
+    var lb = document.getElementById('imgLightbox');
+    lb.querySelector('img').src = src;
+    lb.classList.add('open');
+  }
+  function closeLightbox() {
+    document.getElementById('imgLightbox').classList.remove('open');
+  }
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+
   function openModal(n) {
     pendingProject = n;
     document.getElementById('pwInput').value = '';
@@ -894,6 +913,10 @@ ${allProjectPages}
   animateSphere();
 })();
 </script>
+<div class="img-lightbox" id="imgLightbox" onclick="closeLightbox()">
+  <button class="img-lightbox-close" onclick="event.stopPropagation();closeLightbox()">&#x2715;</button>
+  <img src="" alt="" onclick="event.stopPropagation()" />
+</div>
 </body>
 </html>`;
 

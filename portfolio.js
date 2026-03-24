@@ -39,6 +39,16 @@
     if (typeof window._resumeSphere === 'function') window._resumeSphere(id === 'home');
   }
 
+  function openLightbox(src) {
+    var lb = document.getElementById('imgLightbox');
+    lb.querySelector('img').src = src;
+    lb.classList.add('open');
+  }
+  function closeLightbox() {
+    document.getElementById('imgLightbox').classList.remove('open');
+  }
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });
+
   function openModal(n) {
     pendingProject = n;
     document.getElementById('pwInput').value = '';

@@ -33,6 +33,13 @@
     transform: translate(-50%, -50%);
   }
 
+  .img-lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:800; align-items:center; justify-content:center; cursor:zoom-out; }
+  .img-lightbox.open { display:flex; animation: lbIn 0.2s ease; }
+  @keyframes lbIn { from { opacity:0; } to { opacity:1; } }
+  .img-lightbox img { max-width:92vw; max-height:92vh; object-fit:contain; border-radius:8px; cursor:default; }
+  .img-lightbox-close { position:fixed; top:20px; right:24px; color:#fff; font-size:24px; cursor:pointer; background:none; border:none; opacity:0.6; line-height:1; padding:4px; }
+  .img-lightbox-close:hover { opacity:1; }
+
   .pw-overlay {
     position: fixed; inset: 0; z-index: 500;
     display: flex; align-items: center; justify-content: center;

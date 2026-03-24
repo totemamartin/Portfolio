@@ -226,7 +226,7 @@
 
     
     <div class="proj-section">
-      <div class="proj-section-img"><img src="images/img-1774289065929.jpg" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774289065929.jpg" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Challenge</div>
         <div class="proj-section-title">Building from zero, with no playbook</div>
@@ -236,7 +236,7 @@
     </div>
 
     <div class="proj-section reverse">
-      <div class="proj-section-img"><img src="images/img-1774288667217.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774288667217.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Work</div>
         <div class="proj-section-title">Ceremonies, artifacts, and a single source of truth</div>
@@ -248,7 +248,7 @@
     </div>
 
     <div class="proj-section full-width">
-      <div class="proj-section-img"><img src="images/img-1774288381661.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774288381661.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">Artifact</div>
         <div class="proj-section-title">Notion as north star</div>
@@ -305,7 +305,7 @@
       </div>
     </div>
 
-    <div class="proj-hero g2"></div>
+    <div class="proj-hero" onclick="openLightbox('images/img-1774356820560.png')" style="background-image:url('images/img-1774356820560.png');background-size:cover;background-position:center;cursor:zoom-in;"></div>
 
     <div class="proj-outcome">
       <div class="proj-outcome-label">Outcome</div>
@@ -328,8 +328,8 @@
     </div>
 
     
-    <div class="proj-section">
-      <div class="proj-section-img g2"></div>
+    <div class="proj-section full-width">
+      <div class="proj-section-img"><img src="images/img-1774356542501.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Challenge</div>
         <div class="proj-section-title">One company, two platforms, zero consistency</div>
@@ -338,11 +338,22 @@
     </div>
 
     <div class="proj-section reverse">
-      <div class="proj-section-img"><img src="images/img-1773781165391.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774356933390.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
-        <div class="proj-section-label">The Work</div>
+        <div class="proj-section-label">Design system structure</div>
         <div class="proj-section-title">Architecture first, components second</div>
         <div class="proj-section-text"><p>We proposed a three-tier structure: a shared foundation layer (Aphrodite) containing tokens, typography, and colour; a B2B UI library (Armonia) for the salon management product; and a B2C platform library (Eros) for the consumer app. Every layer was mirrored in Figma and Storybook. Weekly co-creation sessions shaped the roadmap, while bi-weekly shadowing in real salons validated components in the wild.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-img"><img src="images/img-1774356959032.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">Testing</div>
+        <div class="proj-section-title">Testing directly with real users</div>
+        <div class="proj-section-text"><p data-start="152" data-end="248">We tested our components directly with users through shadowing and usability testing sessions.</p>
+<p data-start="255" data-end="355">Shadowing sessions were conducted in the field with our users, typically every two to three weeks.</p>
+<p data-start="362" data-end="493">We combined these qualitative insights with quantitative data from Google Analytics to inform the next iterations and improvements.</p></div>
       </div>
     </div>
 
@@ -352,7 +363,7 @@
         <li>Audited the existing Figma libraries and Storybook to map duplications and identify where the two platforms diverged most critically</li>
         <li>Proposed and defined the three-tier architecture with the core team, getting buy-in from both design and engineering before building anything</li>
         <li>Led weekly roadmap sessions, balancing component creation with maintenance governance and contribution guidelines</li>
-        <li>Designed and ran bi-weekly shadowing sessions with salon professionals — sitting with users in their working environment to observe how components performed under real conditions</li>
+        <li><p>Designed and ran bi-weekly shadowing sessions with salon professionals, sitting with users in their working environment to observe how components performed under real conditions</p></li>
         <li>Wrote the contribution and issue-reporting process that allowed anyone in the company to participate without degrading quality</li>
       </ul>
     </div>
@@ -360,7 +371,7 @@
     <div class="proj-learned">
       <div class="proj-learned-label">What I learned</div>
       <div class="proj-learned-content">
-        <p>A design system only works if engineers trust it as much as designers do. Mirroring Figma and Storybook from the start — rather than building one and retrofitting the other — was the single most important architectural decision we made. It removed the excuse not to use it.</p>
+        <p>A design system only works if engineers trust it as much as designers do. Mirroring Figma and Storybook from the start, rather than building one and retrofitting the other, was the single most important architectural decision we made. It removed the excuse not to use it.</p>
         <p>I also learned that in-context testing is irreplaceable. Reviewing components in Figma told us what they looked like. Watching a salon professional use them on a busy Saturday morning told us whether they actually worked. There is no substitute for that gap.</p>
       </div>
     </div>
@@ -391,7 +402,7 @@
       </div>
     </div>
 
-    <div class="proj-hero" style="background-image:url('images/img-1773779845808.png');background-size:cover;background-position:center;"></div>
+    <div class="proj-hero" onclick="openLightbox('images/img-1773779845808.png')" style="background-image:url('images/img-1773779845808.png');background-size:cover;background-position:center;cursor:zoom-in;"></div>
 
     <div class="proj-outcome">
       <div class="proj-outcome-label">Outcome</div>
@@ -416,7 +427,7 @@
 
     
     <div class="proj-section">
-      <div class="proj-section-img"><img src="images/img-1774343015482.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774343015482.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Challenge</div>
         <div class="proj-section-title">Banking that means something</div>
@@ -426,7 +437,7 @@
     </div>
 
     <div class="proj-section reverse">
-      <div class="proj-section-img"><img src="images/img-1774342885253.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774342885253.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Work</div>
         <div class="proj-section-title">The homepage as a mirror</div>
@@ -435,7 +446,7 @@
     </div>
 
     <div class="proj-section full-width">
-      <div class="proj-section-img"><img src="images/img-1774344033670.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1774344033670.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label"></div>
         <div class="proj-section-title"></div>
@@ -488,7 +499,7 @@
       </div>
     </div>
 
-    <div class="proj-hero" style="background-image:url('images/img-1773781901467.png');background-size:cover;background-position:center;"></div>
+    <div class="proj-hero" onclick="openLightbox('images/img-1773781901467.png')" style="background-image:url('images/img-1773781901467.png');background-size:cover;background-position:center;cursor:zoom-in;"></div>
 
     <div class="proj-outcome">
       <div class="proj-outcome-label">Outcome</div>
@@ -511,21 +522,32 @@
     </div>
 
     
-    <div class="proj-section">
-      <div class="proj-section-img g4"></div>
+    <div class="proj-section full-width">
+      <div class="proj-section-img"><img src="images/img-1774357725851.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
-        <div class="proj-section-label">The Challenge</div>
+        <div class="proj-section-label">The challenge</div>
         <div class="proj-section-title">Designing a service at scale, with five organisations in the room</div>
         <div class="proj-section-text"><p>Sky was launching a new broadband service — and needed to design not just screens, but every touchpoint a customer would encounter, from the first ad to the technician visit to the cancellation call. More than 100 distinct capabilities. Five organisations at the table. Fourteen months. The risk wasn't that we'd design something bad. It was that the pieces wouldn't connect.</p></div>
       </div>
     </div>
 
     <div class="proj-section reverse full-width">
-      <div class="proj-section-img"><img src="images/img-1773781853698.png" alt="" style="width:100%;height:auto;display:block;border-radius:inherit;" /></div>
+      <div class="proj-section-img"><img src="images/img-1773781853698.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
-        <div class="proj-section-label">The Work</div>
-        <div class="proj-section-title">Making the invisible visible — and reviewable</div>
-        <div class="proj-section-text"><p>Sketchin's role was to map every phase of the experience and make it useful as a guide for product owners across all workstreams. That meant co-creating with subject matter experts, translating their domain knowledge into designed flows, and then reviewing every mockup for consistency and usability — catching untreated edge cases before they became product bugs.</p></div>
+        <div class="proj-section-label">The work</div>
+        <div class="proj-section-title">Designing the experience framework</div>
+        <div class="proj-section-text"><p data-start="184" data-end="308">Sketchin's role was to map every phase of the experience and make it actionable for product owners across all workstreams.</p><p>
+</p><p data-start="315" data-end="489">This involved close collaboration with subject matter experts, translating domain knowledge into clear user flows, and shaping a shared foundation to guide product decisions.</p></div>
+      </div>
+    </div>
+
+    <div class="proj-section">
+      <div class="proj-section-img"><img src="images/img-1774357808730.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
+      <div class="proj-section-body">
+        <div class="proj-section-label">the work</div>
+        <div class="proj-section-title">Managing Complexity and preventing rework</div>
+        <div class="proj-section-text"><p data-start="549" data-end="692">The fragmented and asynchronous nature of the project introduced significant complexity, often resulting in rework across the design process.</p><p data-start="137" data-end="305">
+</p><p data-start="699" data-end="869">To address this, we systematically reviewed mockups to ensure consistency and usability, identifying gaps and edge cases early, before they could turn into product issues.</p></div>
       </div>
     </div>
 
@@ -665,5 +687,9 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="portfolio.js"></script>
+<div class="img-lightbox" id="imgLightbox" onclick="closeLightbox()">
+  <button class="img-lightbox-close" onclick="event.stopPropagation();closeLightbox()">&#x2715;</button>
+  <img src="" alt="" onclick="event.stopPropagation()" />
+</div>
 </body>
 </html>
