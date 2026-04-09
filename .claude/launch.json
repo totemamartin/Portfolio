@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Portfolio CMS",
-      "runtimeExecutable": "node",
+      "runtimeExecutable": "/usr/local/bin/node",
       "runtimeArgs": ["cms.js"],
       "port": 3001
     }
