@@ -26,6 +26,7 @@
   },
   "password": "portfolio2026",
   "homeProjectOrder": [
+    1,
     2,
     3,
     4,
@@ -61,7 +62,7 @@
           }
         ],
         "heroGradient": "g6",
-        "outcome": "Deel's document creation experience was redesigned from the ground up — replacing a fragmented, manual-heavy flow with a fast, AI-assisted editor that generates content and prefills data based on the client's company profile. The result cut document creation time by over 60%, reduced errors at the point of sending, and positioned documents as a first-class, intelligent product within Deel's global HR platform.",
+        "outcome": "We redesigned Deel's document creation experience from scratch. The old flow was manual, fragmented and slow. The new one is AI-assisted: it generates content and prefills data from the client's company profile, so HR teams spend their time reviewing instead of typing. Document creation time dropped by over 60%, errors at the point of sending fell sharply, and documents went from being a pain point to one of the most used features on the platform.",
         "impact": [
           {
             "num": "−64%",
@@ -80,44 +81,44 @@
           {
             "label": "The Challenge",
             "title": "Documents were an afterthought in a platform built on them",
-            "text": "<p>At Deel, documents are foundational — contracts, NDAs, amendments, and compliance files underpin every hiring and payment flow. Yet the experience had grown organically over years: multiple entry points, inconsistent states, no clear ownership of actions.</p><p><br></p><p>HR teams were spending an average of 18 minutes manually filling a single document — copying company data they already had elsewhere in Deel, writing boilerplate clauses from scratch, and hunting for the right template across a disorganised library. Contractors, meanwhile, had no visibility into what was pending, and why. Documents needed to become a product, not a backlog feature.</p>",
+            "text": "<p>At Deel, documents are foundational. Contracts, NDAs, amendments and compliance files sit at the centre of every hiring and payment flow. But the experience had grown organically over years, with multiple entry points, inconsistent states, and no clear ownership of actions.</p><p><br></p><p>HR teams were spending an average of 18 minutes manually filling a single document, copying company data they already had elsewhere in Deel, writing boilerplate clauses from scratch, and hunting for the right template across a disorganised library. Contractors had no visibility into what was pending or why. Documents needed to become a real product, not a backlog item.</p>",
             "gradient": "g6",
             "reverse": false
           },
           {
             "label": "The Editor",
             "title": "A document editor built for speed and confidence",
-            "text": "<p>The centrepiece of the redesign was a completely new document editor. Rather than a blank canvas, it was designed as a guided creation environment — with structure already in place, and intelligence built into every field.</p><p><br></p><p>We mapped every document state — draft, pending signature, signed, expired, voided — and gave each a clear, consistent visual language. The creation flow was reduced from a multi-step wizard with ambiguous entry points to a single, linear experience: choose type, review prefilled data, customise, send.</p><p><br></p><p>Bulk actions, template management, and signing flows were consolidated into a unified system that worked the same way regardless of document type or legal jurisdiction.</p>",
+            "text": "<p>The core of the redesign was a completely new document editor. Rather than starting from a blank canvas, users land in a guided creation environment with structure already in place and intelligence built into every field.</p><p><br></p><p>We mapped every document state (draft, pending signature, signed, expired, voided) and gave each a clear, consistent visual language. The creation flow went from a multi-step wizard with ambiguous entry points to a single linear experience: choose type, review prefilled data, customise, send.</p><p><br></p><p>Bulk actions, template management and signing flows were consolidated into one unified system that behaved the same way regardless of document type or legal jurisdiction.</p>",
             "gradient": "g1",
             "reverse": true
           },
           {
             "label": "AI Integration",
             "title": "AI that fills the gaps before the user has to",
-            "text": "<p>The most impactful decision in the project was integrating AI content generation directly into the editor. When a user starts a new document, the system uses the client's company profile — legal name, registered address, jurisdiction, active contracts, contractor details — to prefill all standard fields automatically.</p><p><br></p><p>Beyond data prefill, the AI layer can generate document body content: standard clauses, role-specific language, and jurisdiction-appropriate legal wording — all surfaced as editable suggestions, not locked outputs. The user stays in control; the AI removes the blank-page problem.</p><p><br></p><p>Designing this required careful thinking about trust. We iterated extensively on how to signal AI-generated content versus user-confirmed content, and how to make it easy to override without breaking the flow. The final pattern used subtle inline attribution and a one-click edit model that felt transparent without being interruptive.</p>",
+            "text": "<p>The most impactful decision in the project was integrating AI content generation directly into the editor. When a user starts a new document, the system pulls from the client's company profile (legal name, registered address, jurisdiction, active contracts, contractor details) and prefills all standard fields automatically.</p><p><br></p><p>Beyond data prefill, the AI can generate document body content: standard clauses, role-specific language, jurisdiction-appropriate legal wording. These surface as editable suggestions rather than locked outputs. The user stays in control; the AI just removes the blank-page problem.</p><p><br></p><p>Designing this required a lot of thinking about trust. We iterated on how to signal what the AI had generated versus what the user had confirmed, and how to make it easy to override without interrupting the flow. The final pattern used subtle inline attribution with a one-click edit model that felt transparent without getting in the way.</p>",
             "gradient": "g6",
             "reverse": false
           },
           {
             "label": "The System",
             "title": "States, permissions, and scale",
-            "text": "<p>Beyond the editor itself, we redesigned the full document hub — the surface where HR managers track all documents across their organisation. The previous version had no filtering, no bulk management, and no way to see at a glance who was blocking a flow.</p><p><br></p><p>The new hub introduced a status-first information architecture: every document surfaced its current state, the next required action, and who owned it. Overdue items were flagged automatically. Bulk sending, bulk reminders, and bulk archiving were added as first-class actions — designed for the HR teams managing documents at scale across dozens of jurisdictions simultaneously.</p>",
+            "text": "<p>Alongside the editor, we redesigned the full document hub where HR managers track everything across their organisation. The old version had no filtering, no bulk management, and no clear way to see who was blocking a flow.</p><p><br></p><p>The new hub was built around a status-first architecture: every document shows its current state, the next required action, and who owns it. Overdue items get flagged automatically. Bulk sending, reminders and archiving were added as proper first-class actions, built for teams managing documents across dozens of jurisdictions at the same time.</p>",
             "gradient": "g2",
             "reverse": true
           }
         ],
         "whatIDid": [
-          "Led end-to-end design for the document editor redesign — from the initial experience audit and user research through to final handoff specs and QA",
-          "Defined the information architecture for all document states and the hub view, making pending actions and ownership immediately legible for both senders and recipients",
+          "Led end-to-end design for the document editor redesign, from the initial experience audit and user research through to final handoff specs and QA",
+          "Defined the information architecture for all document states and the hub view, making pending actions and ownership immediately readable for both senders and recipients",
           "Designed the AI-assisted creation flow: how prefilled fields are presented, how generated content is attributed and edited, and how to build trust in AI suggestions without adding friction",
-          "Worked closely with the AI/ML team to translate model capabilities into interaction patterns — ensuring what we designed was technically feasible and reflected the actual confidence level of the model's outputs",
-          "Collaborated with legal and compliance stakeholders to ensure the editor handled the full range of contract types, jurisdictions, and signatory configurations Deel operates across",
-          "Ran usability testing with HR managers across three markets to validate the new flows, identifying the key friction points around AI-generated content and iterating until trust indicators were clear and non-interruptive",
-          "Built and maintained the Figma component extensions required for the document system, ensuring consistency with Deel's broader design system"
+          "Worked closely with the AI/ML team to translate model capabilities into interaction patterns, making sure what we designed was technically feasible and reflected the actual confidence level of the model outputs",
+          "Collaborated with legal and compliance stakeholders to make sure the editor handled the full range of contract types, jurisdictions and signatory configurations Deel operates across",
+          "Ran usability testing with HR managers across three markets to validate the new flows, identified friction points around AI-generated content and iterated until trust signals felt natural rather than interruptive",
+          "Built and maintained the Figma component extensions required for the document system, keeping everything consistent with Deel's broader design system"
         ],
         "whatILearned": [
-          "<p>Designing AI features taught me that the hardest UX problem is not capability — it's trust. The AI could prefill accurately 85% of the time, but if users couldn't tell what was prefilled versus what they entered, they'd either over-trust it (and send wrong documents) or ignore it entirely (and lose the speed benefit). The attribution and edit model we landed on took more iteration than any other part of the project.</p>",
-          "<p>Working in a compliance-heavy context also forced a precision that most product design doesn't require. Every label, every state, every generated clause had legal implications — which meant the instinct to simplify had to be balanced against the need for accuracy. I came away with a much sharper sense of how to make something feel simple without hiding complexity that users actually need to see.</p>"
+          "<p>Designing AI features taught me that the hardest UX problem is not capability, it's trust. The AI could prefill accurately 85% of the time, but if users couldn't tell what was prefilled versus what they had entered themselves, they would either over-trust it and send wrong documents, or ignore it entirely and lose the speed benefit. The attribution and edit model we landed on took more iteration than any other part of the project.</p>",
+          "<p>Working in a compliance-heavy context forced a level of precision that most product design doesn't require. Every label, every state, every generated clause had legal implications. The instinct to simplify had to be balanced against the need for accuracy. I came away with a much sharper sense of how to make something feel simple without hiding complexity that users actually need to see.</p>"
         ],
         "nextProject": {
           "id": 2,
