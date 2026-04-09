@@ -4,6 +4,12 @@
   },
   "hero": {
     "tagline": "Digital Product Designer at Deel. 10+ years of craft. \nDriven by new tech, inspired by music, \nand dedicated to making the complex feel simple",
+    "accentWords": [
+      "Deel",
+      "tech",
+      "music",
+      "simple"
+    ],
     "lastUpdated": "Last updated",
     "dateRange": "2022 — 2026"
   },
