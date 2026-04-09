@@ -62,6 +62,11 @@ function bgAttr(image, gradient, baseClass) {
 }
 
 function nl2br(str) { return esc(str).replace(/\n/g, '<br>'); }
+function accentWords(str) {
+  const words = ['Deel', 'tech', 'music', 'simple'];
+  const re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
+  return nl2br(str).replace(re, '<em class="hero-accent">$1</em>');
+}
 function renderRte(str) {
   if (!str) return '';
   if (/<[a-zA-Z]/.test(str)) return str;
@@ -202,7 +207,7 @@ function generatePortfolio(data) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(meta.title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0e0e0e;
@@ -369,6 +374,7 @@ function generatePortfolio(data) {
     width: 60%; animation: fadeUp 0.8s 0.1s ease both;
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-accent { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; }
 
   .projects { padding-bottom: 100px; }
   .case-studies-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
@@ -537,7 +543,7 @@ ${data.customCSS ? '\n/* Custom CSS */\n' + data.customCSS + '\n' : ''}
   <section class="hero">
     <div class="hero-left">
       <div class="hero-headline-wrap">
-        <h1 class="hero-headline">${nl2br(hero.tagline)}</h1>
+        <h1 class="hero-headline">${accentWords(hero.tagline)}</h1>
       </div>
       <section class="projects" id="projects-section">
         <div class="case-studies-label">Case studies</div>
