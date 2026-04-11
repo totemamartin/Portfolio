@@ -4,6 +4,12 @@
   },
   "hero": {
     "tagline": "Digital Product Designer at Deel. 10+ years of craft. \nDriven by new tech, inspired by music, \nand dedicated to making the complex feel simple",
+    "accentWords": [
+      "Deel",
+      "new tech",
+      "music",
+      "simple"
+    ],
     "lastUpdated": "Last updated",
     "dateRange": "2022 — 2026"
   },
@@ -82,7 +88,8 @@
             "title": "Documents were an afterthought in a platform built on them",
             "text": "<p>At Deel, documents are foundational. Contracts, NDAs, amendments and compliance files sit at the centre of every hiring and payment flow. But the experience had grown organically over years, with multiple entry points, inconsistent states, and no clear ownership of actions.</p><p><br></p><p>HR teams were spending an average of 18 minutes manually filling a single document, copying company data they already had elsewhere in Deel, writing boilerplate clauses from scratch, and hunting for the right template across a disorganised library. Contractors had no visibility into what was pending or why. Documents needed to become a real product, not a backlog item.</p>",
             "gradient": "g6",
-            "reverse": false
+            "reverse": false,
+            "image": "images/img-1775923429733.mp4"
           },
           {
             "label": "The Editor",
@@ -129,13 +136,13 @@
     {
       "id": 2,
       "client": "Casavo",
-      "title": "Design Team",
+      "title": "Building a design team",
       "tag": "",
       "year": "2022",
       "gradient": "g1",
       "detail": {
         "headerTag": "Casavo · 2022",
-        "title": "Design Team",
+        "title": "Building a design team",
         "meta": [
           {
             "label": "Company",
@@ -220,13 +227,13 @@
     {
       "id": 3,
       "client": "Treatwell",
-      "title": "Treatwell PRO",
+      "title": "Brand new experience for beauty salon",
       "tag": "",
       "year": "2021",
       "gradient": "g2",
       "detail": {
         "headerTag": "Treatwell · 2021",
-        "title": "Treatwell PRO",
+        "title": "Brand new experience for beauty salon",
         "meta": [
           {
             "label": "Company",
@@ -312,13 +319,13 @@
     {
       "id": 4,
       "client": "Flowe · Sketchin",
-      "title": "Flowe App",
+      "title": "Status visualization in a digital bank",
       "tag": "Product design",
       "year": "2020",
       "gradient": "g3",
       "detail": {
         "headerTag": "Flowe · 2020",
-        "title": "Flowe App",
+        "title": "Status visualization in a digital bank",
         "meta": [
           {
             "label": "Client",
@@ -403,13 +410,13 @@
     {
       "id": 5,
       "client": "Sky · Sketchin",
-      "title": "Sky Wi-Fi",
+      "title": "Define end to end experience for a WIFI service",
       "tag": "Service Design",
       "year": "2018",
       "gradient": "g4",
       "detail": {
         "headerTag": "Sky · Sketchin · 2018",
-        "title": "Sky Wi-Fi",
+        "title": "Define end to end experience for a WIFI service",
         "meta": [
           {
             "label": "Client",

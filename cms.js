@@ -62,6 +62,12 @@ function bgAttr(image, gradient, baseClass) {
 }
 
 function nl2br(str) { return esc(str).replace(/\n/g, '<br>'); }
+function accentWords(str, words) {
+  if (!words || !words.length) return nl2br(str);
+  const escaped = words.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const re = new RegExp('\\b(' + escaped.join('|') + ')\\b', 'g');
+  return nl2br(str).replace(re, '<em class="hero-accent">$1</em>');
+}
 function renderRte(str) {
   if (!str) return '';
   if (/<[a-zA-Z]/.test(str)) return str;
@@ -201,8 +207,9 @@ function generatePortfolio(data) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(meta.title)}</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111'/><text x='16' y='23' font-family='Inter,sans-serif' font-size='18' font-weight='600' fill='white' text-anchor='middle'>M</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0e0e0e;
@@ -369,6 +376,7 @@ function generatePortfolio(data) {
     width: 60%; animation: fadeUp 0.8s 0.1s ease both;
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-accent { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; }
 
   .projects { padding-bottom: 100px; }
   .case-studies-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
@@ -537,7 +545,7 @@ ${data.customCSS ? '\n/* Custom CSS */\n' + data.customCSS + '\n' : ''}
   <section class="hero">
     <div class="hero-left">
       <div class="hero-headline-wrap">
-        <h1 class="hero-headline">${nl2br(hero.tagline)}</h1>
+        <h1 class="hero-headline">${accentWords(hero.tagline, hero.accentWords)}</h1>
       </div>
       <section class="projects" id="projects-section">
         <div class="case-studies-label">Case studies</div>
@@ -1143,6 +1151,7 @@ function getAdminHTML() {
         <div class="section-header"><h2>Hero Section</h2><p>The main headline and date on the portfolio homepage.</p></div>
         <div class="field"><label>Page Title (browser tab)</label><input type="text" id="meta-title" /></div>
         <div class="field"><label>Tagline / Headline</label><textarea class="tall" id="hero-tagline"></textarea></div>
+        <div class="field"><label>Accent words <span style="font-weight:400;color:var(--muted)">(comma separated — these will appear in serif italic)</span></label><input type="text" id="hero-accentWords" placeholder="e.g. Deel, tech, music, simple" /></div>
         <div class="field-row">
           <div class="field"><label>Label</label><input type="text" id="hero-lastUpdated" /></div>
           <div class="field"><label>Date Range</label><input type="text" id="hero-dateRange" /></div>
@@ -1236,6 +1245,7 @@ function renderAll() {
   if (!data) return;
   document.getElementById('meta-title').value = data.meta.title || '';
   document.getElementById('hero-tagline').value = data.hero.tagline || '';
+  document.getElementById('hero-accentWords').value = (data.hero.accentWords || []).join(', ');
   document.getElementById('hero-lastUpdated').value = data.hero.lastUpdated || '';
   document.getElementById('hero-dateRange').value = data.hero.dateRange || '';
   document.getElementById('footer-copyright').value = data.footer.copyright || '';
@@ -1568,6 +1578,7 @@ function addSection(pi) { data.projects[pi].detail.sections.push({label:'New Sec
 function saveAll() {
   data.meta.title = document.getElementById('meta-title').value;
   data.hero.tagline = document.getElementById('hero-tagline').value;
+  data.hero.accentWords = document.getElementById('hero-accentWords').value.split(',').map(w => w.trim()).filter(Boolean);
   data.hero.lastUpdated = document.getElementById('hero-lastUpdated').value;
   data.hero.dateRange = document.getElementById('hero-dateRange').value;
   data.footer.copyright = document.getElementById('footer-copyright').value;

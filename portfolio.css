@@ -163,6 +163,7 @@
     width: 60%; animation: fadeUp 0.8s 0.1s ease both;
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-accent { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; }
 
   .projects { padding-bottom: 100px; }
   .case-studies-label { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
