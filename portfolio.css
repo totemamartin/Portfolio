@@ -308,3 +308,8 @@
 .projects-list {
     gap: 24px;
 }
+
+.pcard-title {
+    font-size: clamp(15px, 1.1vw, 20px);
+    font-weight: 200;
+}
