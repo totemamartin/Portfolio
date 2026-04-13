@@ -42,6 +42,16 @@
         <div class="case-studies-label">Case studies</div>
         <div class="projects-list">
 
+          <div class="pcard" data-gradient="g6" data-image="images/img-1776092799490.png" onclick="requestProject(1)">
+            <div class="pcard-left">
+              <div class="pcard-info">
+                <div class="pcard-client">Deel<span class="pcard-year">2025</span></div>
+                <div class="pcard-title">Elevate Documents Experience</div>
+              </div>
+            </div>
+            <div class="pcard-right"><div class="pcard-img" style="background-image:url('images/img-1776092799490.png');background-size:cover;background-position:center;"></div></div>
+          </div>
+
           <div class="pcard" data-gradient="g1" data-image="images/img-1773779658028.png" onclick="requestProject(2)">
             <div class="pcard-left">
               <div class="pcard-info">
@@ -116,7 +126,7 @@
       </div>
     </div>
 
-    <div class="proj-hero g6"></div>
+    <div class="proj-hero" onclick="openLightbox('images/img-1776092803418.png')" style="background-image:url('images/img-1776092803418.png');background-size:cover;background-position:center;cursor:zoom-in;"></div>
 
     <div class="proj-outcome">
       <div class="proj-outcome-label">Outcome</div>
@@ -125,7 +135,7 @@
 
     <div class="proj-impact">
       <div class="impact-item">
-        <div class="impact-num">−64%</div>
+        <div class="impact-num">−62%</div>
         <div class="impact-desc">Reduction in average time to create and send a document, from first click to recipient delivery</div>
       </div>
       <div class="impact-item">
@@ -139,51 +149,50 @@
     </div>
 
     
-    <div class="proj-section">
+    <div class="proj-section full-width">
       <div class="proj-section-img"><video autoplay muted loop playsinline src="images/img-1775923429733.mp4" style="width:100%;height:auto;display:block;border-radius:inherit;"></video></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Challenge</div>
-        <div class="proj-section-title">Documents were an afterthought in a platform built on them</div>
-        <div class="proj-section-text"><p>At Deel, documents are foundational. Contracts, NDAs, amendments and compliance files sit at the centre of every hiring and payment flow. But the experience had grown organically over years, with multiple entry points, inconsistent states, and no clear ownership of actions.</p><p><br></p><p>HR teams were spending an average of 18 minutes manually filling a single document, copying company data they already had elsewhere in Deel, writing boilerplate clauses from scratch, and hunting for the right template across a disorganised library. Contractors had no visibility into what was pending or why. Documents needed to become a real product, not a backlog item.</p></div>
+        <div class="proj-section-title">Current experience</div>
+        <div class="proj-section-text"><p class="font-claude-response-body break-words whitespace-normal leading-[1.7]">Creating and sending documents in Deel was a painful experience for HR and ops teams. <br>Before even touching the actual content of a document, users had to work through a long sequence of steps, filling in a dense amount of configuration fields upfront. <br>The editor itself offered little room to work comfortably, making it hard to structure and iterate on content with confidence. What should have been a straightforward task regularly turned into a frustrating, time-consuming process.</p></div>
       </div>
     </div>
 
     <div class="proj-section reverse">
-      <div class="proj-section-img g1"></div>
+      <div class="proj-section-img"><img src="images/img-1776084494119.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The Editor</div>
-        <div class="proj-section-title">A document editor built for speed and confidence</div>
-        <div class="proj-section-text"><p>The core of the redesign was a completely new document editor. Rather than starting from a blank canvas, users land in a guided creation environment with structure already in place and intelligence built into every field.</p><p><br></p><p>We mapped every document state (draft, pending signature, signed, expired, voided) and gave each a clear, consistent visual language. The creation flow went from a multi-step wizard with ambiguous entry points to a single linear experience: choose type, review prefilled data, customise, send.</p><p><br></p><p>Bulk actions, template management and signing flows were consolidated into one unified system that behaved the same way regardless of document type or legal jurisdiction.</p></div>
+        <div class="proj-section-title">New editor: a content-first approach</div>
+        <div class="proj-section-text"><p>The redesigned editor starts from where it should always have started: the document itself. <br>Users open a clean writing surface and begin creating content right away, without any form standing between them and their work. When they need to insert dynamic data or a fillable field, they type <code class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]">#</code> and a contextual menu appears inline, showing the available variables and worker-facing fields. Everything stays in one place. No switching between panels, no hunting for settings. The fields live inside the content, exactly where they belong</p></div>
       </div>
     </div>
 
     <div class="proj-section">
-      <div class="proj-section-img g6"></div>
+      <div class="proj-section-img"><img src="images/img-1776088736124.png" alt="" onclick="openLightbox(this.src)" style="width:100%;height:auto;display:block;border-radius:inherit;cursor:zoom-in;" /></div>
       <div class="proj-section-body">
         <div class="proj-section-label">AI Integration</div>
         <div class="proj-section-title">AI that fills the gaps before the user has to</div>
-        <div class="proj-section-text"><p>The most impactful decision in the project was integrating AI content generation directly into the editor. When a user starts a new document, the system pulls from the client's company profile (legal name, registered address, jurisdiction, active contracts, contractor details) and prefills all standard fields automatically.</p><p><br></p><p>Beyond data prefill, the AI can generate document body content: standard clauses, role-specific language, jurisdiction-appropriate legal wording. These surface as editable suggestions rather than locked outputs. The user stays in control; the AI just removes the blank-page problem.</p><p><br></p><p>Designing this required a lot of thinking about trust. We iterated on how to signal what the AI had generated versus what the user had confirmed, and how to make it easy to override without interrupting the flow. The final pattern used subtle inline attribution with a one-click edit model that felt transparent without getting in the way.</p></div>
+        <div class="proj-section-text"><p><b>AI</b> steps in at two moments where the old experience created the most friction. When starting a new document, it helps draft the initial content based on the document type, giving users a solid foundation to work from instead of a blank page. <br>When it comes time to send, it <b>reads the document and figures out the rest</b>: who should receive it, and what each person needs to do. If it detects a signature field, it suggests "sign" as the required action automatically. Less guesswork, fewer mistakes, and a much faster path from draft to delivery.</p></div>
       </div>
     </div>
 
-    <div class="proj-section reverse">
-      <div class="proj-section-img g2"></div>
+    <div class="proj-section reverse full-width">
+      <div class="proj-section-img"><video autoplay muted loop playsinline src="images/img-1776075102723.mp4" style="width:100%;height:auto;display:block;border-radius:inherit;"></video></div>
       <div class="proj-section-body">
         <div class="proj-section-label">The System</div>
-        <div class="proj-section-title">States, permissions, and scale</div>
-        <div class="proj-section-text"><p>Alongside the editor, we redesigned the full document hub where HR managers track everything across their organisation. The old version had no filtering, no bulk management, and no clear way to see who was blocking a flow.</p><p><br></p><p>The new hub was built around a status-first architecture: every document shows its current state, the next required action, and who owns it. Overdue items get flagged automatically. Bulk sending, reminders and archiving were added as proper first-class actions, built for teams managing documents across dozens of jurisdictions at the same time.</p></div>
+        <div class="proj-section-title">End-to-end: a new experience architecture</div>
+        <div class="proj-section-text"><p><span style="background-color: transparent;">The new end-to-end flow was built around the way people actually think when creating a document, not around the system's internal logic. Information appears when it is relevant, and only then. Each step in the journey has a clear purpose, and the transitions between them feel natural rather than abrupt. <br><br>What used to require jumping between multiple screens and filling in forms that felt disconnected from the task is now a single continuous flow. From the first word typed to the moment a document lands in a worker's inbox, the experience finally holds together.</span></p><p><br>To validate the direction early, I built a working prototype using Claude Code. This allowed me to put something real in front of users and the internal team, gather honest feedback on the flow and interactions, and iterate quickly before any production work began. Having a functional prototype rather than static screens made the feedback sessions significantly more useful — people could actually experience the flow, not just react to how it looked</p></div>
       </div>
     </div>
 
     <div class="proj-did">
       <div class="proj-did-label">What I did</div>
       <ul class="proj-did-list">
-        <li>Led end-to-end design for the document editor redesign, from the initial experience audit and user research through to final handoff specs and QA</li>
-        <li>Defined the information architecture for all document states and the hub view, making pending actions and ownership immediately readable for both senders and recipients</li>
+        <li><p>Led end-to-end design for the document editor redesign, from the initial experience audit and research through to final handoff specs and QA</p></li>
+        <li><p>Map the information architecture for all document info requirements, making pending actions and ownership immediately readable for both senders and recipients</p></li>
         <li>Designed the AI-assisted creation flow: how prefilled fields are presented, how generated content is attributed and edited, and how to build trust in AI suggestions without adding friction</li>
         <li>Worked closely with the AI/ML team to translate model capabilities into interaction patterns, making sure what we designed was technically feasible and reflected the actual confidence level of the model outputs</li>
         <li>Collaborated with legal and compliance stakeholders to make sure the editor handled the full range of contract types, jurisdictions and signatory configurations Deel operates across</li>
-        <li>Ran usability testing with HR managers across three markets to validate the new flows, identified friction points around AI-generated content and iterated until trust signals felt natural rather than interruptive</li>
         <li>Built and maintained the Figma component extensions required for the document system, keeping everything consistent with Deel's broader design system</li>
       </ul>
     </div>
@@ -191,7 +200,6 @@
     <div class="proj-learned">
       <div class="proj-learned-label">What I learned</div>
       <div class="proj-learned-content">
-        <p>Designing AI features taught me that the hardest UX problem is not capability, it's trust. The AI could prefill accurately 85% of the time, but if users couldn't tell what was prefilled versus what they had entered themselves, they would either over-trust it and send wrong documents, or ignore it entirely and lose the speed benefit. The attribution and edit model we landed on took more iteration than any other part of the project.</p>
         <p>Working in a compliance-heavy context forced a level of precision that most product design doesn't require. Every label, every state, every generated clause had legal implications. The instinct to simplify had to be balanced against the need for accuracy. I came away with a much sharper sense of how to make something feel simple without hiding complexity that users actually need to see.</p>
       </div>
     </div>
