@@ -71,7 +71,7 @@
         "outcome": "We redesigned Deel's document creation experience from scratch. The old flow was manual, fragmented and slow. The new one is AI-assisted: it generates content and prefills data from the client's company profile, so HR teams spend their time reviewing instead of typing. Document creation time dropped by over 60%, errors at the point of sending fell sharply, and documents went from being a pain point to one of the most used features on the platform.",
         "impact": [
           {
-            "num": "−62%",
+            "num": "−46%",
             "desc": "Reduction in average time to create and send a document, from first click to recipient delivery"
           },
           {
